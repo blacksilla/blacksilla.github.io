@@ -25,9 +25,10 @@ html {
 }
 
 body {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   background: var(--bg-color);
   color: var(--text-color);
+  scroll-snap-type: y mandatory;
 }
 
 .header {
@@ -142,10 +143,9 @@ section {
   height: 100%;
   border-right: 2px solid var(--main-color);
   z-index: -1;
-  
 }
 
-.home.show-animate .home-content .text-animate h3::before{
+.home.show-animate .home-content .text-animate h3::before {
   animation: homeCursorText 6s linear infinite;
   animation-delay: 2s;
 }
@@ -563,7 +563,7 @@ span {
   padding-bottom: 7rem;
 }
 
-.contact h2{
+.contact h2 {
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
@@ -647,7 +647,7 @@ span {
 }
 
 .footer-text,
-.footer-iconTop{
+.footer-iconTop {
   position: relative;
 }
 
@@ -712,18 +712,18 @@ span {
 #menu-icon .animate,
 .home.show-animate .animate {
   animation: showRight 1s ease forwards;
-  animation-delay: calc(.3s * var(--i));
+  animation-delay: calc(0.3s * var(--i));
 }
 
 .animate.scroll {
   transition: 1s ease;
-  transition-delay: calc(.3s / var(--i));
+  transition-delay: calc(0.3s / var(--i));
   animation: none;
 }
 
 section:nth-child(odd) .animate.scroll,
-.footer .animate.scroll{
-  background:var(--second-bg-color) ;
+.footer .animate.scroll {
+  background: var(--second-bg-color);
 }
 
 .education .education-box .animate.scroll {
@@ -734,7 +734,7 @@ section:nth-child(odd) .animate.scroll,
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll{
+.footer.show-animate .animate.scroll {
   transition-delay: calc(0.3s * var(--i));
   width: 0;
 }
@@ -760,10 +760,10 @@ section:nth-child(odd) .animate.scroll,
     padding: 2rem 4%;
   }
 }
-@media (max-width: 850px){
-.animate.home-img{
-  width: 55%;
-}
+@media (max-width: 850px) {
+  .animate.home-img {
+    width: 55%;
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -938,7 +938,6 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 
-
 /* scrollbar */
 
 .lock {
@@ -953,7 +952,7 @@ section:nth-child(odd) .animate.scroll,
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #397524 #DFE9EB;
+  scrollbar-color: #397524 #dfe9eb;
 }
 
 /* Chrome, Edge and Safari */
@@ -966,9 +965,9 @@ section:nth-child(odd) .animate.scroll,
   background-color: var(--bg-color);
 }
 
-*::-webkit-scrollbar-track:hover {
-  /* background-color: var(--second-bg-color); */
-}
+/* *::-webkit-scrollbar-track:hover {
+  /* background-color: var(--second-bg-color); 
+} */
 
 *::-webkit-scrollbar-track:active {
   background-color: var(--second-bg-color);
