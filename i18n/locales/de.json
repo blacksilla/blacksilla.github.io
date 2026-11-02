@@ -14,19 +14,19 @@
   "hero": {
     "name": "Afonso Silva",
     "role": "Full-Stack-Entwickler",
-    "pitch": "Ich baue sorgfältige, gut abgestimmte Software für das Web und darüber hinaus, von Madeira aus.",
+    "pitch": "Ich baue Web-Software mit .NET und Vue, von Madeira aus. Ich höre noch immer wie ein Musiker zu.",
     "scroll": "Scrollen"
   },
   "about": {
     "heading": "Über mich",
     "paragraphs": [
-      "Ich war viele Jahre Berufsmusiker, und Timing, Zuhören und Liebe zum Detail waren die ganze Arbeit. Noch heute höre ich das meiste wie einen Mix: Jeder Teil braucht Raum, und nichts sollte lauter sein als nötig.",
-      "Heute arbeite ich als Full-Stack-Entwickler, meist mit .NET und Vue. Ich mag Systeme, die klar in der Anwendung und ruhig in der Wartung sind, und ich freue mich über Momente, in denen mein Audio-Hintergrund und mein Code im selben Projekt zusammenkommen."
+      "Ich war viele Jahre Berufsmusiker, und Timing und Zuhören waren die ganze Arbeit. Noch heute höre ich das meiste wie einen Mix: Jeder Teil braucht Raum, und nichts sollte lauter sein als nötig.",
+      "Heute bin ich Full-Stack-Entwickler, meist mit .NET und Vue. Ich mag Software, die klar in der Anwendung und ruhig in der Wartung ist, und ich freue mich über die seltenen Projekte, in denen Audio und Code zusammenkommen."
     ]
   },
   "projects": {
     "heading": "Projekte",
-    "intro": "Eine Auswahl dessen, was ich gebaut habe oder gerade baue.",
+    "intro": "Eine kurze Liste, mit Absicht.",
     "visit": "Seite öffnen",
     "status": {
       "live": "Online",
@@ -69,7 +69,7 @@
     "items": [
       {
         "name": "C# / .NET",
-        "use": "Meine wichtigste Back-end-Sprache, für APIs und Geschäftslogik."
+        "use": "Hier bin ich am stärksten: APIs und Geschäftslogik."
       },
       {
         "name": "ASP.NET",
@@ -77,15 +77,15 @@
       },
       {
         "name": "SQL Server",
-        "use": "Schema-Entwurf, Abfragen und aufgeräumte Daten."
+        "use": "Schemas, Abfragen und Daten, die aufgeräumt bleiben."
       },
       {
         "name": "Vue 3 / Nuxt 3",
-        "use": "Front-ends und Websites, auch diese hier."
+        "use": "Front-ends und Websites, diese hier eingeschlossen."
       },
       {
         "name": "TypeScript",
-        "use": "Typisierter Code auf beiden Seiten des Stacks."
+        "use": "Typen auf beiden Seiten des Stacks."
       },
       {
         "name": "React Native",
@@ -93,11 +93,11 @@
       },
       {
         "name": "Python / MicroPython",
-        "use": "Skripte und kleine Geräte, die ihre Umgebung messen."
+        "use": "Skripte und kleine Geräte, die ihre Umgebung wahrnehmen."
       },
       {
         "name": "Tailwind CSS",
-        "use": "Einheitliches, schnelles Styling."
+        "use": "Schnelles, einheitliches Styling."
       },
       {
         "name": "Azure",
@@ -105,7 +105,7 @@
       },
       {
         "name": "Docker",
-        "use": "Reproduzierbare Umgebungen."
+        "use": "Umgebungen, die sich überall gleich verhalten."
       }
     ]
   },
@@ -138,7 +138,7 @@
         "period": "2023 - Heute",
         "title": "Anwendungsentwickler",
         "place": "Unipartner Madeira",
-        "text": "Entwicklung und Pflege von Unternehmensanwendungen."
+        "text": "Entwicklung von Unternehmensanwendungen mit .NET, SQL Server und Vue, darunter ein eigenes CMS."
       },
       {
         "period": "2021",
@@ -156,8 +156,8 @@
   },
   "contact": {
     "heading": "Kontakt",
-    "line": "Am einfachsten erreichst du mich über meine Links.",
-    "links": "Woanders finden"
+    "line": "Sag Hallo über einen dieser Wege.",
+    "links": "Anderswo"
   },
   "footer": {
     "rights": "Afonso Silva. Alle Rechte vorbehalten."
@@ -167,14 +167,9 @@
   },
   "_todo": [
     "meta.description",
-    "hero.pitch",
-    "about.paragraphs",
-    "projects.intro",
     "projects.items[0].stack",
     "projects.items[2].stack",
-    "stack.items[*].use",
-    "journey.education_items[*].text",
-    "journey.experience_items[*].text"
+    "journey.education_items[*].text"
   ],
   "themes": {
     "heading": "Themes",
@@ -190,11 +185,17 @@
     },
     "hints": {
       "ember": "Immer an.",
-      "kanto": "Manche Codes sind älter als das Web.",
-      "saiyan": "Sprich den Namen eines kleinen gelben Freundes.",
-      "matrix": "Ruf es, höflich, in einer fremden Sprache.",
-      "synthwave": "Folge dem weißen Kaninchen, oder nimm einfach eine Pille.",
-      "gameboy": "Sei beharrlich mit dem Namen ganz oben."
-    }
+      "kanto": "Sprich den Namen eines kleinen gelben Freundes.",
+      "saiyan": "Ruf es, höflich, in einer fremden Sprache.",
+      "matrix": "Folge dem weißen Kaninchen, oder nimm einfach eine Pille.",
+      "synthwave": "Sei beharrlich mit dem Namen ganz oben.",
+      "gameboy": "Manche Codes sind älter als das Web."
+    },
+    "intro": {
+      "title": "Diese Seite hat Geheimnisse",
+      "body": "Fünf Themes sind versteckt. Tippe, klicke oder drücke das Richtige, und die ganze Seite verändert sich. Ein paar Hinweise:",
+      "close": "Verstanden"
+    },
+    "idle": "Fünf Themes sind versteckt. Fahr über ein ? oder tippe darauf für einen Hinweis."
   }
 }

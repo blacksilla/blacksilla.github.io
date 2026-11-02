@@ -1,4 +1,4 @@
-:root, html[data-theme="ember"] {
+:root, [data-theme="ember"] {
   --c-ink: 11 12 15;
   --c-ink-soft: 20 22 27;
   --c-bone: 233 228 218;
@@ -6,7 +6,7 @@
   --c-accent: 255 90 54;
   --c-accent-2: 29 42 58;
 }
-html[data-theme="kanto"] {
+[data-theme="kanto"] {
   --c-ink: 10 18 38;
   --c-ink-soft: 17 28 58;
   --c-bone: 244 241 234;
@@ -14,7 +14,7 @@ html[data-theme="kanto"] {
   --c-accent: 255 74 74;
   --c-accent-2: 255 203 5;
 }
-html[data-theme="saiyan"] {
+[data-theme="saiyan"] {
   --c-ink: 13 11 31;
   --c-ink-soft: 22 19 53;
   --c-bone: 241 236 228;
@@ -22,7 +22,7 @@ html[data-theme="saiyan"] {
   --c-accent: 255 138 31;
   --c-accent-2: 47 139 255;
 }
-html[data-theme="matrix"] {
+[data-theme="matrix"] {
   --c-ink: 2 10 4;
   --c-ink-soft: 7 20 10;
   --c-bone: 200 245 208;
@@ -30,7 +30,7 @@ html[data-theme="matrix"] {
   --c-accent: 0 255 102;
   --c-accent-2: 10 61 28;
 }
-html[data-theme="synthwave"] {
+[data-theme="synthwave"] {
   --c-ink: 13 6 24;
   --c-ink-soft: 23 10 42;
   --c-bone: 243 233 255;
@@ -38,7 +38,7 @@ html[data-theme="synthwave"] {
   --c-accent: 255 43 214;
   --c-accent-2: 0 229 255;
 }
-html[data-theme="gameboy"] {
+[data-theme="gameboy"] {
   --c-ink: 15 56 15;
   --c-ink-soft: 24 72 24;
   --c-bone: 202 220 159;

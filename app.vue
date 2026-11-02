@@ -12,4 +12,5 @@ useSeoMeta({ title: () => t('meta.title'), description: () => t('meta.descriptio
 <template>
   <div data-cursor aria-hidden="true" class="pointer-events-none fixed left-0 top-0 z-[60] hidden"></div>
   <NuxtPage />
+  <ClientOnly><SecretsIntro /></ClientOnly>
 </template>
