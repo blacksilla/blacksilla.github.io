@@ -14,19 +14,19 @@
   "hero": {
     "name": "Afonso Silva",
     "role": "Full-stack developer",
-    "pitch": "I build careful, well-tuned software for the web and beyond, from Madeira.",
+    "pitch": "I build web software with .NET and Vue, from Madeira. I still listen like a musician.",
     "scroll": "Scroll"
   },
   "about": {
     "heading": "About",
     "paragraphs": [
-      "I spent years as a professional musician, where timing, listening and attention to detail were the whole job. I still hear most things as a mix: every part needs room, and nothing should be louder than it has to be.",
-      "Today I work as a full-stack developer, mostly with .NET and Vue. I like systems that are clear to use and calm to maintain, and I enjoy the moments where my audio background and my code end up in the same project."
+      "I spent years as a professional musician, where timing and listening were the whole job. I still hear most things as a mix: every part needs room, and nothing should be louder than it has to be.",
+      "Today I'm a full-stack developer, mostly with .NET and Vue. I like software that is clear to use and calm to maintain, and I enjoy the rare projects where audio and code meet."
     ]
   },
   "projects": {
     "heading": "Projects",
-    "intro": "A selection of things I have built or am building.",
+    "intro": "A short list, on purpose.",
     "visit": "Visit site",
     "status": {
       "live": "Live",
@@ -69,7 +69,7 @@
     "items": [
       {
         "name": "C# / .NET",
-        "use": "My main back-end language, for APIs and business logic."
+        "use": "Where I'm strongest: APIs and business logic."
       },
       {
         "name": "ASP.NET",
@@ -77,15 +77,15 @@
       },
       {
         "name": "SQL Server",
-        "use": "Schema design, queries and keeping data tidy."
+        "use": "Schemas, queries and data that stays tidy."
       },
       {
         "name": "Vue 3 / Nuxt 3",
-        "use": "Front ends and sites, including this one."
+        "use": "Front ends and sites, this one included."
       },
       {
         "name": "TypeScript",
-        "use": "Typed code on both sides of the stack."
+        "use": "Types on both sides of the stack."
       },
       {
         "name": "React Native",
@@ -97,7 +97,7 @@
       },
       {
         "name": "Tailwind CSS",
-        "use": "Consistent, quick styling."
+        "use": "Fast, consistent styling."
       },
       {
         "name": "Azure",
@@ -105,7 +105,7 @@
       },
       {
         "name": "Docker",
-        "use": "Repeatable environments."
+        "use": "Environments that behave the same everywhere."
       }
     ]
   },
@@ -138,13 +138,7 @@
         "period": "2023 - Present",
         "title": "Application Engineer",
         "place": "Unipartner Madeira",
-        "text": "Building and maintaining business applications."
-      },
-      {
-        "period": "2021",
-        "title": "Personal project",
-        "place": "Madeira",
-        "text": "A MicroPython hygrometer with a 3D-printed housing."
+        "text": "Building business applications with .NET, SQL Server and Vue, including a custom CMS."
       },
       {
         "period": "2020 - 2021",
@@ -156,8 +150,8 @@
   },
   "contact": {
     "heading": "Contact",
-    "line": "The easiest way to reach me is through my links.",
-    "links": "Find me elsewhere"
+    "line": "Say hello through any of these.",
+    "links": "Elsewhere"
   },
   "footer": {
     "rights": "Afonso Silva. All rights reserved."
@@ -167,14 +161,9 @@
   },
   "_todo": [
     "meta.description",
-    "hero.pitch",
-    "about.paragraphs",
-    "projects.intro",
     "projects.items[0].stack",
     "projects.items[2].stack",
-    "stack.items[*].use",
-    "journey.education_items[*].text",
-    "journey.experience_items[*].text"
+    "journey.education_items[*].text"
   ],
   "themes": {
     "heading": "Themes",
@@ -190,11 +179,17 @@
     },
     "hints": {
       "ember": "Always lit.",
-      "kanto": "Some codes are older than the web.",
-      "saiyan": "Say the name of a small yellow friend.",
-      "matrix": "Shout it, politely, in a foreign tongue.",
-      "synthwave": "Follow the white rabbit, or just take a pill.",
-      "gameboy": "Be persistent with the name at the top."
-    }
+      "kanto": "Say the name of a small yellow friend.",
+      "saiyan": "Shout it, politely, in a foreign tongue.",
+      "matrix": "Follow the white rabbit, or just take a pill.",
+      "synthwave": "Be persistent with the name at the top.",
+      "gameboy": "Some codes are older than the web."
+    },
+    "intro": {
+      "title": "This site has secrets",
+      "body": "Five hidden themes are waiting. Type, click or press the right thing and the whole site changes. A few clues:",
+      "close": "Got it"
+    },
+    "idle": "Five themes are hidden. Hover or tap a ? for a clue."
   }
 }
