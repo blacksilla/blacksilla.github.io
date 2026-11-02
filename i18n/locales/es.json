@@ -186,8 +186,7 @@
   },
   "contact": {
     "heading": "Contacto",
-    "line": "Si tienes algo en mente, escríbeme.",
-    "email": "hello{'@'}example.com",
+    "line": "La forma más fácil de contactarme es a través de mis enlaces.",
     "links": "Encuéntrame en otros sitios"
   },
   "footer": {
@@ -207,9 +206,7 @@
     "projects.items[5].status",
     "stack.items[*].use",
     "journey.education_items[*].text",
-    "journey.experience_items[*].text",
-    "contact.line",
-    "contact.email"
+    "journey.experience_items[*].text"
   ],
   "themes": {
     "heading": "Temas",
