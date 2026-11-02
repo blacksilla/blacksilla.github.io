@@ -36,7 +36,8 @@
     },
     "items": [
       {
-        "summary": "A website with a custom content management system, built with Vue 3 and .NET.",
+        "title": "Website + custom CMS",
+        "summary": "The public site and the content management system behind it, built with Vue 3 and .NET.",
         "stack": [
           "Vue 3",
           ".NET",
@@ -60,37 +61,6 @@
           "QR"
         ],
         "status": "inDevelopment"
-      },
-      {
-        "summary": "A remote for monitor and headphone mixes with faders, snapshots and live OSC feedback.",
-        "stack": [
-          "React Native",
-          "Expo",
-          "OSC"
-        ],
-        "status": "inDevelopment"
-      },
-      {
-        "summary": "Details on the way.",
-        "stack": [],
-        "status": "comingSoon"
-      },
-      {
-        "summary": "A personal humidity and temperature monitor in a 3D-printed housing.",
-        "stack": [
-          "MicroPython",
-          "3D printing"
-        ],
-        "status": "live"
-      },
-      {
-        "summary": "A small site in five languages with restrained motion.",
-        "stack": [
-          "Nuxt 3",
-          "GSAP",
-          "Tailwind"
-        ],
-        "status": "live"
       }
     ]
   },
@@ -202,8 +172,6 @@
     "projects.intro",
     "projects.items[0].stack",
     "projects.items[2].stack",
-    "projects.items[4].summary",
-    "projects.items[5].status",
     "stack.items[*].use",
     "journey.education_items[*].text",
     "journey.experience_items[*].text"

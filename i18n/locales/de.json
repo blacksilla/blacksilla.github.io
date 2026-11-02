@@ -36,7 +36,8 @@
     },
     "items": [
       {
-        "summary": "Eine Website mit maßgeschneidertem Content-Management-System, gebaut mit Vue 3 und .NET.",
+        "title": "Website mit individuellem CMS",
+        "summary": "Die öffentliche Website und das dahinterliegende Content-Management-System, gebaut mit Vue 3 und .NET.",
         "stack": [
           "Vue 3",
           ".NET",
@@ -60,37 +61,6 @@
           "QR"
         ],
         "status": "inDevelopment"
-      },
-      {
-        "summary": "Eine Fernbedienung für Monitor- und Kopfhörer-Mixe mit Fadern, Snapshots und Live-OSC-Rückmeldung.",
-        "stack": [
-          "React Native",
-          "Expo",
-          "OSC"
-        ],
-        "status": "inDevelopment"
-      },
-      {
-        "summary": "Details folgen.",
-        "stack": [],
-        "status": "comingSoon"
-      },
-      {
-        "summary": "Ein persönlicher Feuchtigkeits- und Temperaturmesser in einem 3D-gedruckten Gehäuse.",
-        "stack": [
-          "MicroPython",
-          "3D-Druck"
-        ],
-        "status": "live"
-      },
-      {
-        "summary": "Eine kleine Seite in fünf Sprachen mit zurückhaltender Bewegung.",
-        "stack": [
-          "Nuxt 3",
-          "GSAP",
-          "Tailwind"
-        ],
-        "status": "live"
       }
     ]
   },
@@ -202,8 +172,6 @@
     "projects.intro",
     "projects.items[0].stack",
     "projects.items[2].stack",
-    "projects.items[4].summary",
-    "projects.items[5].status",
     "stack.items[*].use",
     "journey.education_items[*].text",
     "journey.experience_items[*].text"

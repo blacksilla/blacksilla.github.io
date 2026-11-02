@@ -36,7 +36,8 @@
     },
     "items": [
       {
-        "summary": "Un site web avec un système de gestion de contenu sur mesure, construit avec Vue 3 et .NET.",
+        "title": "Site web avec CMS sur mesure",
+        "summary": "Le site public et le système de gestion de contenu qui le fait vivre, construits avec Vue 3 et .NET.",
         "stack": [
           "Vue 3",
           ".NET",
@@ -60,37 +61,6 @@
           "QR"
         ],
         "status": "inDevelopment"
-      },
-      {
-        "summary": "Une télécommande pour les mixages de retours et de casques, avec faders, snapshots et retour OSC en direct.",
-        "stack": [
-          "React Native",
-          "Expo",
-          "OSC"
-        ],
-        "status": "inDevelopment"
-      },
-      {
-        "summary": "Détails à venir.",
-        "stack": [],
-        "status": "comingSoon"
-      },
-      {
-        "summary": "Un moniteur personnel d'humidité et de température dans un boîtier imprimé en 3D.",
-        "stack": [
-          "MicroPython",
-          "Impression 3D"
-        ],
-        "status": "live"
-      },
-      {
-        "summary": "Un petit site en cinq langues, au mouvement mesuré.",
-        "stack": [
-          "Nuxt 3",
-          "GSAP",
-          "Tailwind"
-        ],
-        "status": "live"
       }
     ]
   },
@@ -202,8 +172,6 @@
     "projects.intro",
     "projects.items[0].stack",
     "projects.items[2].stack",
-    "projects.items[4].summary",
-    "projects.items[5].status",
     "stack.items[*].use",
     "journey.education_items[*].text",
     "journey.experience_items[*].text"
