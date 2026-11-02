@@ -1,13 +1,13 @@
 <script setup lang="ts">
 const { t, tm, rt } = useI18n()
 // Project names are proper nouns: never translated, same order as projects.items in the locales.
-const NAMES = ['Totalmix', 'Highfield Studio', 'PocketMix', 'TotalMix Remote', 'Coastal Fretworks', 'Hygrometer', 'blacksilla.github.io']
+// null = unnamed project, shown with its translated descriptive `title` instead.
+const NAMES = [null, 'Highfield Studio', 'PocketMix']
 const items = computed(() => (tm('projects.items') as any[]).map((p, i) => ({
-  name: NAMES[i], summary: rt(p.summary), status: rt(p.status),
+  name: NAMES[i] ?? rt(p.title), summary: rt(p.summary), status: rt(p.status),
   url: p.url ? rt(p.url) : '', stack: (p.stack || []).map((s: any) => rt(s)),
 })))
-const lead = computed(() => items.value.slice(0, 3))
-const rest = computed(() => items.value.slice(3))
+const lead = items
 const IMAGES: Record<string, string> = { 'Highfield Studio': '/images/projects/highfield.jpg' }
 // Abstract in-theme art (currentColor only) for projects without a real image.
 const fader = [0.3, 0.7, 0.45, 0.85, 0.2, 0.6]
@@ -49,16 +49,6 @@ const fader = [0.3, 0.7, 0.45, 0.85, 0.2, 0.6]
             <p v-if="p.stack.length" class="mt-4 text-small uppercase text-bone-muted">{{ p.stack.join(' / ') }}</p>
             <a v-if="p.url" data-cursor-hover :href="p.url" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block border-b border-accent text-accent">{{ t('projects.visit') }}<span class="sr-only"> - {{ p.name }}</span></a>
           </div>
-        </li>
-      </ul>
-
-      <ul class="mt-20 grid gap-x-12 sm:grid-cols-2 lg:grid-cols-4">
-        <li v-for="p in rest" :key="p.name" data-reveal data-cursor-hover class="group min-w-0 border-t border-hairline py-8 transition-colors hover:border-accent">
-          <p class="text-small uppercase text-accent">{{ t(`projects.status.${p.status}`) }}</p>
-          <h3 class="mt-2 font-serif text-2xl break-words hyphens-auto transition-colors group-hover:text-accent">{{ p.name }}</h3>
-          <p class="mt-3 text-bone-muted break-words hyphens-auto">{{ p.summary }}</p>
-          <p v-if="p.stack.length" class="mt-3 text-small uppercase text-bone-muted">{{ p.stack.join(' / ') }}</p>
-          <a v-if="p.url" data-cursor-hover :href="p.url" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block border-b border-accent text-accent">{{ t('projects.visit') }}<span class="sr-only"> - {{ p.name }}</span></a>
         </li>
       </ul>
     </div>
