@@ -14,19 +14,19 @@
   "hero": {
     "name": "Afonso Silva",
     "role": "Développeur full-stack",
-    "pitch": "Je conçois des logiciels soignés et bien accordés, pour le web et au-delà, depuis Madère.",
+    "pitch": "Je conçois des logiciels web avec .NET et Vue, depuis Madère. J'écoute toujours en musicien.",
     "scroll": "Défiler"
   },
   "about": {
     "heading": "À propos",
     "paragraphs": [
-      "J'ai passé des années comme musicien professionnel, où le tempo, l'écoute et le souci du détail faisaient tout le métier. J'entends encore la plupart des choses comme un mixage : chaque partie a besoin de sa place, et rien ne doit sonner plus fort que nécessaire.",
-      "Aujourd'hui, je travaille comme développeur full-stack, surtout avec .NET et Vue. J'aime les systèmes clairs à utiliser et sereins à maintenir, et j'apprécie les moments où mon bagage audio et mon code se retrouvent dans le même projet."
+      "J'ai passé des années comme musicien professionnel, où le tempo et l'écoute faisaient tout le métier. J'entends encore la plupart des choses comme un mixage : chaque partie a besoin de sa place, et rien ne doit sonner plus fort que nécessaire.",
+      "Aujourd'hui, je suis développeur full-stack, surtout avec .NET et Vue. J'aime les logiciels clairs à utiliser et sereins à maintenir, et j'apprécie les rares projets où l'audio et le code se rencontrent."
     ]
   },
   "projects": {
     "heading": "Projets",
-    "intro": "Une sélection de choses que j'ai construites ou que je construis.",
+    "intro": "Une liste courte, volontairement.",
     "visit": "Voir le site",
     "status": {
       "live": "En ligne",
@@ -69,7 +69,7 @@
     "items": [
       {
         "name": "C# / .NET",
-        "use": "Mon langage back-end principal, pour les API et la logique métier."
+        "use": "Là où je suis le plus solide : API et logique métier."
       },
       {
         "name": "ASP.NET",
@@ -77,27 +77,27 @@
       },
       {
         "name": "SQL Server",
-        "use": "Conception de schémas, requêtes et données bien rangées."
+        "use": "Schémas, requêtes et données toujours bien rangées."
       },
       {
         "name": "Vue 3 / Nuxt 3",
-        "use": "Front-ends et sites, y compris celui-ci."
+        "use": "Front-ends et sites, celui-ci compris."
       },
       {
         "name": "TypeScript",
-        "use": "Du code typé des deux côtés de la stack."
+        "use": "Des types des deux côtés de la stack."
       },
       {
         "name": "React Native",
-        "use": "Applications mobiles, construites avec Expo."
+        "use": "Applications mobiles, créées avec Expo."
       },
       {
         "name": "Python / MicroPython",
-        "use": "Scripts, et petits appareils qui mesurent leur environnement."
+        "use": "Scripts, et petits appareils qui perçoivent leur environnement."
       },
       {
         "name": "Tailwind CSS",
-        "use": "Un style cohérent et rapide."
+        "use": "Un style rapide et cohérent."
       },
       {
         "name": "Azure",
@@ -105,7 +105,7 @@
       },
       {
         "name": "Docker",
-        "use": "Des environnements reproductibles."
+        "use": "Des environnements qui se comportent partout de la même façon."
       }
     ]
   },
@@ -138,13 +138,7 @@
         "period": "2023 - Aujourd'hui",
         "title": "Ingénieur d'applications",
         "place": "Unipartner Madeira",
-        "text": "Développement et maintenance d'applications métier."
-      },
-      {
-        "period": "2021",
-        "title": "Projet personnel",
-        "place": "Madère",
-        "text": "Un hygromètre en MicroPython avec boîtier imprimé en 3D."
+        "text": "Développement d'applications métier avec .NET, SQL Server et Vue, dont un CMS sur mesure."
       },
       {
         "period": "2020 - 2021",
@@ -156,8 +150,8 @@
   },
   "contact": {
     "heading": "Contact",
-    "line": "Le moyen le plus simple de me joindre passe par mes liens.",
-    "links": "Me retrouver ailleurs"
+    "line": "Un petit bonjour via l'un de ces liens.",
+    "links": "Ailleurs"
   },
   "footer": {
     "rights": "Afonso Silva. Tous droits réservés."
@@ -167,14 +161,9 @@
   },
   "_todo": [
     "meta.description",
-    "hero.pitch",
-    "about.paragraphs",
-    "projects.intro",
     "projects.items[0].stack",
     "projects.items[2].stack",
-    "stack.items[*].use",
-    "journey.education_items[*].text",
-    "journey.experience_items[*].text"
+    "journey.education_items[*].text"
   ],
   "themes": {
     "heading": "Thèmes",
@@ -190,11 +179,17 @@
     },
     "hints": {
       "ember": "Toujours allumée.",
-      "kanto": "Certains codes sont plus vieux que le web.",
-      "saiyan": "Dis le nom d’un petit ami jaune.",
-      "matrix": "Crie-le, poliment, dans une autre langue.",
-      "synthwave": "Suis le lapin blanc, ou prends simplement une pilule.",
-      "gameboy": "Sois persévérant avec le nom tout en haut."
-    }
+      "kanto": "Dis le nom d’un petit ami jaune.",
+      "saiyan": "Crie-le, poliment, dans une autre langue.",
+      "matrix": "Suis le lapin blanc, ou prends simplement une pilule.",
+      "synthwave": "Sois persévérant avec le nom tout en haut.",
+      "gameboy": "Certains codes sont plus vieux que le web."
+    },
+    "intro": {
+      "title": "Ce site a des secrets",
+      "body": "Cinq thèmes sont cachés. Tapez, cliquez ou appuyez sur la bonne chose et tout le site change. Quelques indices :",
+      "close": "Compris"
+    },
+    "idle": "Cinq thèmes sont cachés. Survolez ou touchez un ? pour un indice."
   }
 }

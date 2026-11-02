@@ -14,19 +14,19 @@
   "hero": {
     "name": "Afonso Silva",
     "role": "Desarrollador full-stack",
-    "pitch": "Construyo software cuidado y bien afinado, para la web y más allá, desde Madeira.",
+    "pitch": "Construyo software web con .NET y Vue, desde Madeira. Sigo escuchando como un músico.",
     "scroll": "Bajar"
   },
   "about": {
     "heading": "Sobre mí",
     "paragraphs": [
-      "Pasé años como músico profesional, donde el tempo, la escucha y la atención al detalle eran todo el trabajo. Aún oigo casi todo como una mezcla: cada parte necesita su espacio y nada debe sonar más fuerte de lo necesario.",
-      "Hoy trabajo como desarrollador full-stack, sobre todo con .NET y Vue. Me gustan los sistemas claros de usar y tranquilos de mantener, y disfruto los momentos en que mi experiencia en audio y mi código acaban en el mismo proyecto."
+      "Pasé años como músico profesional, donde el tempo y la escucha eran todo el trabajo. Aún oigo casi todo como una mezcla: cada parte necesita su espacio y nada debe sonar más fuerte de lo necesario.",
+      "Hoy soy desarrollador full-stack, sobre todo con .NET y Vue. Me gusta el software claro de usar y tranquilo de mantener, y disfruto de los pocos proyectos donde el audio y el código se encuentran."
     ]
   },
   "projects": {
     "heading": "Proyectos",
-    "intro": "Una selección de cosas que he construido o que estoy construyendo.",
+    "intro": "Una lista corta, a propósito.",
     "visit": "Ver sitio",
     "status": {
       "live": "En línea",
@@ -69,7 +69,7 @@
     "items": [
       {
         "name": "C# / .NET",
-        "use": "Mi lenguaje principal de back-end, para APIs y lógica de negocio."
+        "use": "Donde más fuerte soy: APIs y lógica de negocio."
       },
       {
         "name": "ASP.NET",
@@ -77,27 +77,27 @@
       },
       {
         "name": "SQL Server",
-        "use": "Diseño de esquemas, consultas y datos bien ordenados."
+        "use": "Esquemas, consultas y datos siempre ordenados."
       },
       {
         "name": "Vue 3 / Nuxt 3",
-        "use": "Front-ends y sitios, incluido este."
+        "use": "Front-ends y sitios, este incluido."
       },
       {
         "name": "TypeScript",
-        "use": "Código tipado en ambos lados del stack."
+        "use": "Tipos en ambos lados del stack."
       },
       {
         "name": "React Native",
-        "use": "Aplicaciones móviles, construidas con Expo."
+        "use": "Aplicaciones móviles, hechas con Expo."
       },
       {
         "name": "Python / MicroPython",
-        "use": "Scripts y pequeños dispositivos que miden su entorno."
+        "use": "Scripts y pequeños dispositivos que perciben su entorno."
       },
       {
         "name": "Tailwind CSS",
-        "use": "Estilos coherentes y rápidos."
+        "use": "Estilos rápidos y coherentes."
       },
       {
         "name": "Azure",
@@ -105,7 +105,7 @@
       },
       {
         "name": "Docker",
-        "use": "Entornos reproducibles."
+        "use": "Entornos que se comportan igual en todas partes."
       }
     ]
   },
@@ -138,13 +138,7 @@
         "period": "2023 - Actualidad",
         "title": "Ingeniero de Aplicaciones",
         "place": "Unipartner Madeira",
-        "text": "Desarrollo y mantenimiento de aplicaciones empresariales."
-      },
-      {
-        "period": "2021",
-        "title": "Proyecto personal",
-        "place": "Madeira",
-        "text": "Un higrómetro en MicroPython con carcasa impresa en 3D."
+        "text": "Desarrollo de aplicaciones empresariales con .NET, SQL Server y Vue, incluido un CMS a medida."
       },
       {
         "period": "2020 - 2021",
@@ -156,8 +150,8 @@
   },
   "contact": {
     "heading": "Contacto",
-    "line": "La forma más fácil de contactarme es a través de mis enlaces.",
-    "links": "Encuéntrame en otros sitios"
+    "line": "Saluda por cualquiera de estos medios.",
+    "links": "En otros sitios"
   },
   "footer": {
     "rights": "Afonso Silva. Todos los derechos reservados."
@@ -167,14 +161,9 @@
   },
   "_todo": [
     "meta.description",
-    "hero.pitch",
-    "about.paragraphs",
-    "projects.intro",
     "projects.items[0].stack",
     "projects.items[2].stack",
-    "stack.items[*].use",
-    "journey.education_items[*].text",
-    "journey.experience_items[*].text"
+    "journey.education_items[*].text"
   ],
   "themes": {
     "heading": "Temas",
@@ -190,11 +179,17 @@
     },
     "hints": {
       "ember": "Siempre encendida.",
-      "kanto": "Algunos códigos son más viejos que la web.",
-      "saiyan": "Di el nombre de un pequeño amigo amarillo.",
-      "matrix": "Grítalo, con educación, en otra lengua.",
-      "synthwave": "Sigue al conejo blanco, o toma una pastilla.",
-      "gameboy": "Sé insistente con el nombre de arriba."
-    }
+      "kanto": "Di el nombre de un pequeño amigo amarillo.",
+      "saiyan": "Grítalo, con educación, en otra lengua.",
+      "matrix": "Sigue al conejo blanco, o toma una pastilla.",
+      "synthwave": "Sé insistente con el nombre de arriba.",
+      "gameboy": "Algunos códigos son más viejos que la web."
+    },
+    "intro": {
+      "title": "Este sitio tiene secretos",
+      "body": "Hay cinco temas ocultos. Escribe, haz clic o pulsa lo correcto y todo el sitio cambia. Algunas pistas:",
+      "close": "Entendido"
+    },
+    "idle": "Hay cinco temas ocultos. Pasa el ratón o toca un ? para ver una pista."
   }
 }
