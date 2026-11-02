@@ -1,0 +1,36 @@
+/* Hidden initial state only when the head script added .js-motion (JS on, no reduced motion).
+   [data-seen] (set by the plugin once revealed) keeps content visible across rebuilds. */
+.js-motion [data-reveal],
+.js-motion [data-reveal-lines] { opacity: 0; }
+.js-motion [data-reveal][data-seen],
+.js-motion [data-reveal-lines][data-seen] { opacity: 1; }
+.js-motion [data-parallax],
+.js-motion [data-parallax-img],
+.js-motion [data-timeline-line] { will-change: transform; }
+
+/* Hero intro: hold until the first build has set the start states. */
+.js-motion:not(.motion-ready) [data-wave],
+.js-motion:not(.motion-ready) [data-portrait] { visibility: hidden; }
+
+/* Project panels: media unmasked + text risen by the plugin. */
+.js-motion [data-panel]:not([data-seen]) > :first-child > :first-child { clip-path: inset(0 0 100% 0); }
+.js-motion [data-panel]:not([data-seen]) > :nth-child(2) > * { opacity: 0; }
+
+.m-line { display: block; overflow: hidden; padding-bottom: 0.12em; margin-bottom: -0.12em; }
+.m-line-in { display: block; will-change: transform; }
+
+/* Cursor ring (accent only; system cursor stays visible). */
+[data-cursor].is-on {
+  width: 28px; height: 28px; margin: -14px 0 0 -14px;
+  border: 1px solid rgb(var(--c-accent)); border-radius: 50%;
+  background-color: rgb(var(--c-accent) / 0);
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+  will-change: transform;
+}
+[data-cursor].is-on.is-hover { background-color: rgb(var(--c-accent) / 0.14); }
+
+/* Theme-change wash. */
+.m-theme-wipe {
+  position: fixed; inset: 0; z-index: 55; pointer-events: none; opacity: 0;
+  background: radial-gradient(circle at 50% 50%, rgb(var(--c-accent) / 0.16), transparent 65%);
+}

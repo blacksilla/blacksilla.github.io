@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "title": "Afonso Silva | Développeur full-stack",
+    "description": "Afonso Silva est développeur full-stack à Madère, au Portugal, et travaille avec .NET, Vue et Nuxt. Ancien musicien professionnel."
+  },
+  "nav": {
+    "about": "À propos",
+    "projects": "Projets",
+    "stack": "Stack",
+    "journey": "Parcours",
+    "contact": "Contact",
+    "skip": "Aller au contenu"
+  },
+  "hero": {
+    "name": "Afonso Silva",
+    "role": "Développeur full-stack",
+    "pitch": "Je conçois des logiciels soignés et bien accordés, pour le web et au-delà, depuis Madère.",
+    "scroll": "Défiler"
+  },
+  "about": {
+    "heading": "À propos",
+    "paragraphs": [
+      "J'ai passé des années comme musicien professionnel, où le tempo, l'écoute et le souci du détail faisaient tout le métier. J'entends encore la plupart des choses comme un mixage : chaque partie a besoin de sa place, et rien ne doit sonner plus fort que nécessaire.",
+      "Aujourd'hui, je travaille comme développeur full-stack, surtout avec .NET et Vue. J'aime les systèmes clairs à utiliser et sereins à maintenir, et j'apprécie les moments où mon bagage audio et mon code se retrouvent dans le même projet."
+    ]
+  },
+  "projects": {
+    "heading": "Projets",
+    "intro": "Une sélection de choses que j'ai construites ou que je construis.",
+    "visit": "Voir le site",
+    "status": {
+      "live": "En ligne",
+      "inProgress": "En cours",
+      "inDevelopment": "En chantier",
+      "comingSoon": "Bientôt"
+    },
+    "items": [
+      {
+        "summary": "Un site web avec un système de gestion de contenu sur mesure, construit avec Vue 3 et .NET.",
+        "stack": [
+          "Vue 3",
+          ".NET",
+          "SQL Server"
+        ],
+        "status": "inProgress"
+      },
+      {
+        "summary": "Un site web conçu et réalisé de bout en bout en Vue.",
+        "stack": [
+          "Vue"
+        ],
+        "status": "live",
+        "url": "https://highfield.pt"
+      },
+      {
+        "summary": "Des mixages casque personnels pour RME TotalMix FX, pilotés depuis le téléphone de chaque musicien via un code QR. Fonctionne comme application de bureau hors ligne.",
+        "stack": [
+          "Bureau",
+          "OSC",
+          "QR"
+        ],
+        "status": "inDevelopment"
+      },
+      {
+        "summary": "Une télécommande pour les mixages de retours et de casques, avec faders, snapshots et retour OSC en direct.",
+        "stack": [
+          "React Native",
+          "Expo",
+          "OSC"
+        ],
+        "status": "inDevelopment"
+      },
+      {
+        "summary": "Détails à venir.",
+        "stack": [],
+        "status": "comingSoon"
+      },
+      {
+        "summary": "Un moniteur personnel d'humidité et de température dans un boîtier imprimé en 3D.",
+        "stack": [
+          "MicroPython",
+          "Impression 3D"
+        ],
+        "status": "live"
+      },
+      {
+        "summary": "Un petit site en cinq langues, au mouvement mesuré.",
+        "stack": [
+          "Nuxt 3",
+          "GSAP",
+          "Tailwind"
+        ],
+        "status": "live"
+      }
+    ]
+  },
+  "stack": {
+    "heading": "Stack",
+    "items": [
+      {
+        "name": "C# / .NET",
+        "use": "Mon langage back-end principal, pour les API et la logique métier."
+      },
+      {
+        "name": "ASP.NET",
+        "use": "API web et applications rendues côté serveur."
+      },
+      {
+        "name": "SQL Server",
+        "use": "Conception de schémas, requêtes et données bien rangées."
+      },
+      {
+        "name": "Vue 3 / Nuxt 3",
+        "use": "Front-ends et sites, y compris celui-ci."
+      },
+      {
+        "name": "TypeScript",
+        "use": "Du code typé des deux côtés de la stack."
+      },
+      {
+        "name": "React Native",
+        "use": "Applications mobiles, construites avec Expo."
+      },
+      {
+        "name": "Python / MicroPython",
+        "use": "Scripts, et petits appareils qui mesurent leur environnement."
+      },
+      {
+        "name": "Tailwind CSS",
+        "use": "Un style cohérent et rapide."
+      },
+      {
+        "name": "Azure",
+        "use": "Hébergement et déploiement."
+      },
+      {
+        "name": "Docker",
+        "use": "Des environnements reproductibles."
+      }
+    ]
+  },
+  "journey": {
+    "heading": "Parcours",
+    "education": "Formation",
+    "experience": "Expérience",
+    "education_items": [
+      {
+        "period": "2015 - 2019",
+        "title": "Nouvelles Technologies de la Communication",
+        "place": "Université d'Aveiro",
+        "text": "Licence axée sur le web, le multimédia et les systèmes interactifs."
+      },
+      {
+        "period": "2020",
+        "title": "Principes du marketing digital",
+        "place": "Google",
+        "text": "Certificat sur les fondamentaux du marketing digital."
+      },
+      {
+        "period": "2022",
+        "title": "Requalificar +Digital",
+        "place": "Université de Madère",
+        "text": "Formation en C# et SQL."
+      }
+    ],
+    "experience_items": [
+      {
+        "period": "2023 - Aujourd'hui",
+        "title": "Ingénieur d'applications",
+        "place": "Unipartner Madeira",
+        "text": "Développement et maintenance d'applications métier."
+      },
+      {
+        "period": "2021",
+        "title": "Projet personnel",
+        "place": "Madère",
+        "text": "Un hygromètre en MicroPython avec boîtier imprimé en 3D."
+      },
+      {
+        "period": "2020 - 2021",
+        "title": "Technologue en communication",
+        "place": "Câmara Municipal do Porto Santo",
+        "text": "Travail de numérisation et refonte de l'identité du système de recherche."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "line": "Si vous avez une idée en tête, écrivez-moi.",
+    "email": "hello{'@'}example.com",
+    "links": "Me retrouver ailleurs"
+  },
+  "footer": {
+    "rights": "Afonso Silva. Tous droits réservés."
+  },
+  "language": {
+    "label": "Langue"
+  },
+  "_todo": [
+    "meta.description",
+    "hero.pitch",
+    "about.paragraphs",
+    "projects.intro",
+    "projects.items[0].stack",
+    "projects.items[2].stack",
+    "projects.items[4].summary",
+    "projects.items[5].status",
+    "stack.items[*].use",
+    "journey.education_items[*].text",
+    "journey.experience_items[*].text",
+    "contact.line",
+    "contact.email"
+  ],
+  "themes": {
+    "heading": "Thèmes",
+    "locked": "verrouillé",
+    "toast": "Thème débloqué : {name}",
+    "names": {
+      "ember": "Ember",
+      "kanto": "Kanto",
+      "saiyan": "Saiyan",
+      "matrix": "Matrix",
+      "synthwave": "Synthwave",
+      "gameboy": "Handheld"
+    },
+    "hints": {
+      "ember": "Toujours allumée.",
+      "kanto": "Certains codes sont plus vieux que le web.",
+      "saiyan": "Dis le nom d’un petit ami jaune.",
+      "matrix": "Crie-le, poliment, dans une autre langue.",
+      "synthwave": "Suis le lapin blanc, ou prends simplement une pilule.",
+      "gameboy": "Sois persévérant avec le nom tout en haut."
+    }
+  }
+}
