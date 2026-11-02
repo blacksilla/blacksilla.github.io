@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "Afonso Silva | Programador full-stack",
+    "description": "Afonso Silva é programador full-stack na Madeira, Portugal, e trabalha com .NET, Vue e Nuxt. Antigo músico profissional."
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "stack": "Stack",
+    "journey": "Percurso",
+    "contact": "Contacto",
+    "skip": "Saltar para o conteúdo"
+  },
+  "hero": {
+    "name": "Afonso Silva",
+    "role": "Programador full-stack",
+    "pitch": "Construo software cuidado e bem afinado, para a web e não só, a partir da Madeira.",
+    "scroll": "Descer"
+  },
+  "about": {
+    "heading": "Sobre",
+    "paragraphs": [
+      "Passei anos como músico profissional, onde o tempo, a escuta e a atenção ao detalhe eram todo o trabalho. Ainda oiço quase tudo como uma mistura: cada parte precisa de espaço, e nada deve soar mais alto do que o necessário.",
+      "Hoje trabalho como programador full-stack, sobretudo com .NET e Vue. Gosto de sistemas que são claros de usar e tranquilos de manter, e aprecio os momentos em que o áudio e o código acabam no mesmo projeto."
+    ]
+  },
+  "projects": {
+    "heading": "Projetos",
+    "intro": "Uma seleção de coisas que construí ou que estou a construir.",
+    "visit": "Ver site",
+    "status": {
+      "live": "Online",
+      "inProgress": "Em curso",
+      "inDevelopment": "Em desenvolvimento",
+      "comingSoon": "Em breve"
+    },
+    "items": [
+      {
+        "title": "Website com CMS à medida",
+        "summary": "O site público e o sistema de gestão de conteúdos que o sustenta, construídos com Vue 3 e .NET.",
+        "stack": [
+          "Vue 3",
+          ".NET",
+          "SQL Server"
+        ],
+        "status": "inProgress"
+      },
+      {
+        "summary": "Um site desenhado e construído de ponta a ponta em Vue.",
+        "stack": [
+          "Vue"
+        ],
+        "status": "live",
+        "url": "https://highfield.pt"
+      },
+      {
+        "summary": "Misturas pessoais de auscultadores para o RME TotalMix FX, controladas no telemóvel de cada músico através de um código QR. Funciona como aplicação de desktop offline.",
+        "stack": [
+          "Desktop",
+          "OSC",
+          "QR"
+        ],
+        "status": "inDevelopment"
+      }
+    ]
+  },
+  "stack": {
+    "heading": "Stack",
+    "items": [
+      {
+        "name": "C# / .NET",
+        "use": "A minha principal linguagem de back-end, para APIs e lógica de negócio."
+      },
+      {
+        "name": "ASP.NET",
+        "use": "APIs web e aplicações renderizadas no servidor."
+      },
+      {
+        "name": "SQL Server",
+        "use": "Desenho de esquemas, consultas e dados bem organizados."
+      },
+      {
+        "name": "Vue 3 / Nuxt 3",
+        "use": "Front-ends e sites, incluindo este."
+      },
+      {
+        "name": "TypeScript",
+        "use": "Código tipado nos dois lados da stack."
+      },
+      {
+        "name": "React Native",
+        "use": "Aplicações móveis, construídas com Expo."
+      },
+      {
+        "name": "Python / MicroPython",
+        "use": "Scripts e pequenos dispositivos que medem o ambiente."
+      },
+      {
+        "name": "Tailwind CSS",
+        "use": "Estilos consistentes e rápidos."
+      },
+      {
+        "name": "Azure",
+        "use": "Alojamento e implementação."
+      },
+      {
+        "name": "Docker",
+        "use": "Ambientes repetíveis."
+      }
+    ]
+  },
+  "journey": {
+    "heading": "Percurso",
+    "education": "Formação",
+    "experience": "Experiência",
+    "education_items": [
+      {
+        "period": "2015 - 2019",
+        "title": "Novas Tecnologias da Comunicação",
+        "place": "Universidade de Aveiro",
+        "text": "Licenciatura em web, multimédia e sistemas interativos."
+      },
+      {
+        "period": "2020",
+        "title": "Princípios de Marketing Digital",
+        "place": "Google",
+        "text": "Certificado nos fundamentos do marketing digital."
+      },
+      {
+        "period": "2022",
+        "title": "Requalificar +Digital",
+        "place": "Universidade da Madeira",
+        "text": "Formação em C# e SQL."
+      }
+    ],
+    "experience_items": [
+      {
+        "period": "2023 - Presente",
+        "title": "Engenheiro de Aplicações",
+        "place": "Unipartner Madeira",
+        "text": "Desenvolvimento e manutenção de aplicações empresariais."
+      },
+      {
+        "period": "2021",
+        "title": "Projeto pessoal",
+        "place": "Madeira",
+        "text": "Um higrómetro em MicroPython com caixa impressa em 3D."
+      },
+      {
+        "period": "2020 - 2021",
+        "title": "Tecnólogo de Comunicação",
+        "place": "Câmara Municipal do Porto Santo",
+        "text": "Trabalho de digitalização e redesenho da marca do sistema de pesquisa."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contacto",
+    "line": "A forma mais fácil de me contactares é através dos meus links.",
+    "links": "Encontra-me noutros sítios"
+  },
+  "footer": {
+    "rights": "Afonso Silva. Todos os direitos reservados."
+  },
+  "language": {
+    "label": "Idioma"
+  },
+  "_todo": [
+    "meta.description",
+    "hero.pitch",
+    "about.paragraphs",
+    "projects.intro",
+    "projects.items[0].stack",
+    "projects.items[2].stack",
+    "stack.items[*].use",
+    "journey.education_items[*].text",
+    "journey.experience_items[*].text"
+  ],
+  "themes": {
+    "heading": "Temas",
+    "locked": "bloqueado",
+    "toast": "Tema desbloqueado: {name}",
+    "names": {
+      "ember": "Ember",
+      "kanto": "Kanto",
+      "saiyan": "Saiyan",
+      "matrix": "Matrix",
+      "synthwave": "Synthwave",
+      "gameboy": "Handheld"
+    },
+    "hints": {
+      "ember": "Sempre acesa.",
+      "kanto": "Alguns códigos são mais antigos do que a web.",
+      "saiyan": "Diz o nome de um pequeno amigo amarelo.",
+      "matrix": "Grita-o, com boas maneiras, noutra língua.",
+      "synthwave": "Segue o coelho branco, ou toma só um comprimido.",
+      "gameboy": "Sê persistente com o nome lá em cima."
+    }
+  }
+}

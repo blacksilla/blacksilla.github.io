@@ -1,0 +1,30 @@
+:root {
+  --ease-suave: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-slow: 1.4s;
+  --dur-eased: 1s;
+}
+
+html { background: rgb(var(--c-ink)); color: rgb(var(--c-bone)); -webkit-font-smoothing: antialiased; }
+body { font-family: Inter, system-ui, sans-serif; background: rgb(var(--c-ink)); }
+::selection { background: rgb(var(--c-accent)); color: rgb(var(--c-ink)); }
+:focus-visible { outline: 2px solid rgb(var(--c-accent)); outline-offset: 4px; }
+.hairline { border-color: rgb(var(--c-bone) / 0.12); }
+.hairline-t { border-top: 1px solid rgb(var(--c-bone) / 0.12); }
+
+/* smooth theme switches */
+html, body, body * { transition: background-color 0.6s var(--ease-suave), color 0.6s var(--ease-suave), border-color 0.6s var(--ease-suave); }
+
+/* Lenis recommended */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
