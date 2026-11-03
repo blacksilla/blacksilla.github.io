@@ -12,31 +12,33 @@ const label = (id: ThemeId) => open(id) ? t(`themes.names.${id}`) : `${t('themes
 </script>
 
 <template>
-  <div class="max-w-md">
+  <div class="w-[min(100%,22rem)]">
     <p class="mb-3 text-small uppercase text-bone-muted">{{ $t('themes.heading') }}</p>
-    <ul class="flex gap-4" @mouseleave="active = null">
+    <ul class="flex gap-3" @mouseleave="active = null">
       <li v-for="id in THEMES" :key="id">
-        <!-- data-theme scopes the real theme variables, so swatches always match the theme -->
+        <!-- The button uses the page's own colours; only the inner dot is scoped with data-theme to show that theme's palette. -->
         <button
           v-if="open(id)"
           type="button"
-          :data-theme="id"
-          class="block h-8 w-8 rounded-full border border-hairline outline-offset-4 transition-transform hover:scale-110 aria-pressed:ring-2 aria-pressed:ring-bone aria-pressed:ring-offset-2 aria-pressed:ring-offset-ink"
-          style="background: linear-gradient(135deg, rgb(var(--c-ink)) 50%, rgb(var(--c-accent)) 50%)"
+          data-cursor-hover
+          class="flex h-10 w-10 items-center justify-center rounded-full border border-transparent transition-colors duration-200 hover:border-bone-muted aria-pressed:border-bone"
           :aria-pressed="current === id"
           :aria-label="label(id)"
           @click="set(id); active = id" @mouseenter="active = id" @focus="active = id" @blur="active = null"
-        />
+        >
+          <span :data-theme="id" class="block h-6 w-6 rounded-full" style="background: linear-gradient(135deg, rgb(var(--c-ink)) 50%, rgb(var(--c-accent)) 50%); box-shadow: inset 0 0 0 1px rgb(var(--c-bone) / 0.25)"></span>
+        </button>
         <button
           v-else
           type="button"
-          class="flex h-8 w-8 items-center justify-center rounded-full border border-hairline text-small text-bone-muted outline-offset-4 hover:border-accent hover:text-accent"
+          data-cursor-hover
+          class="flex h-10 w-10 items-center justify-center rounded-full border border-dashed border-hairline text-small text-bone-muted transition-colors duration-200 hover:border-accent hover:text-accent"
           :aria-label="label(id)"
           @click="active = id" @mouseenter="active = id" @focus="active = id" @blur="active = null"
         >?</button>
       </li>
     </ul>
-    <p aria-live="polite" class="mt-3 min-h-[3em] text-small text-bone-muted">{{ caption }}</p>
+    <p aria-live="polite" class="mt-3 min-h-[4.5em] text-small text-bone-muted">{{ caption }}</p>
     <div aria-live="polite" class="pointer-events-none fixed bottom-6 left-1/2 z-50 -translate-x-1/2">
       <p v-if="toast" class="rounded-full border border-hairline bg-ink-soft px-5 py-2 text-small text-bone">
         {{ $t('themes.toast', { name: $t(`themes.names.${toast}`) }) }}
