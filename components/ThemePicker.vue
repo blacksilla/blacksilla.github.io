@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { current, unlocked, toast, set } = useTheme()
-const { consoleOpen, progress, play } = useSecrets()
+const { consoleOpen, progress } = useSecrets()
 const { t } = useI18n()
 const open = (id: ThemeId) => unlocked.value.includes(id)
 // The swatch that was hovered, focused or tapped: its name or riddle shows in the caption (works on touch too).
@@ -27,7 +27,7 @@ const label = (id: ThemeId) => open(id) ? t(`themes.names.${id}`) : `${t('themes
           class="flex h-10 w-10 items-center justify-center rounded-full border border-transparent transition-colors duration-200 hover:border-bone-muted aria-pressed:border-bone"
           :aria-pressed="current === id"
           :aria-label="label(id)"
-          @click="set(id); play(id); active = id" @mouseenter="active = id" @focus="active = id" @blur="active = null"
+          @click="set(id); active = id" @mouseenter="active = id" @focus="active = id" @blur="active = null"
         >
           <span :data-theme="id" class="block h-6 w-6 rounded-full" style="background: linear-gradient(135deg, rgb(var(--c-ink)) 50%, rgb(var(--c-accent)) 50%); box-shadow: inset 0 0 0 1px rgb(var(--c-bone) / 0.25)"></span>
         </button>

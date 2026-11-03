@@ -25,9 +25,10 @@ export function useSecrets() {
   const play = (id: ThemeId) => { if (id !== 'ember') burst.value = { id, n: Date.now() } }
   const clear =() => { buffer = ''; progress.value = { matched: 0, total: 0, visible: false } }
 
+  // The animation and the toast belong to the first discovery only; a known code just switches the theme.
   function found(id: ThemeId) {
     clear()
-    unlock(id)
+    if (!unlock(id)) return
     play(id)
     toast.value = id
     clearTimeout(toastTimer)
@@ -57,5 +58,5 @@ export function useSecrets() {
     return !!id
   }
 
-  return { feed, submit, found, play, burst, progress, consoleOpen }
+  return { feed, submit, found, burst, progress, consoleOpen }
 }

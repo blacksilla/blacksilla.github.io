@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// A short, simple SVG animation played when a secret is found (or a theme is picked again).
+// A short, simple SVG animation played the first time a secret is found.
 // Plain geometric nods only, coloured with the active theme's variables; purely decorative.
 const { burst } = useSecrets()
 let timer: ReturnType<typeof setTimeout>
