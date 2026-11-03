@@ -180,7 +180,7 @@
       "jedi": "Saber",
       "lumos": "Candlelight",
       "noir": "Noir",
-      "midnight": "Midnight"
+      "flux": "Flux"
     },
     "hints": {
       "ember": "Immer an.",
@@ -193,7 +193,7 @@
       "jedi": "Tippe das Energiefeld, das die Jedi nutzen, 5 Buchstaben.",
       "lumos": "Tippe den Zauberspruch, der einen Zauberstab leuchten lässt, 5 Buchstaben.",
       "noir": "Tippe 5-mal schnell auf das © in der Fußzeile.",
-      "midnight": "Besuche diese Seite, während die Welt schläft, zwischen Mitternacht und 5 Uhr morgens."
+      "flux": "Tippe den Namen des Edelstahl-Autos, das durch die Zeit reist."
     },
     "intro": {
       "title": "Diese Seite hat Geheimnisse",
@@ -204,8 +204,7 @@
     "kind": {
       "type": "Tippen",
       "click": "Klicken",
-      "keys": "Tasten drücken",
-      "time": "Besuche es"
+      "keys": "Tasten drücken"
     },
     "console": {
       "open": "Code eingeben",

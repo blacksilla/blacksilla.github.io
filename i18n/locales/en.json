@@ -180,7 +180,7 @@
       "jedi": "Saber",
       "lumos": "Candlelight",
       "noir": "Noir",
-      "midnight": "Midnight"
+      "flux": "Flux"
     },
     "hints": {
       "ember": "Always lit.",
@@ -193,7 +193,7 @@
       "jedi": "Type the energy field that the Jedi use, 5 letters.",
       "lumos": "Type the wizard's spell that lights a wand, 5 letters.",
       "noir": "Tap the © in the footer 5 times, fast.",
-      "midnight": "Visit this site while the world sleeps, between midnight and 5 a.m."
+      "flux": "Type the name of the stainless steel car that travels through time."
     },
     "intro": {
       "title": "This site has secrets",
@@ -204,8 +204,7 @@
     "kind": {
       "type": "Type it",
       "click": "Click it",
-      "keys": "Press the keys",
-      "time": "Visit it"
+      "keys": "Press the keys"
     },
     "console": {
       "open": "Enter a code",

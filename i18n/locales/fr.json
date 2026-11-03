@@ -180,7 +180,7 @@
       "jedi": "Saber",
       "lumos": "Candlelight",
       "noir": "Noir",
-      "midnight": "Midnight"
+      "flux": "Flux"
     },
     "hints": {
       "ember": "Toujours allumée.",
@@ -193,7 +193,7 @@
       "jedi": "Tape le champ d’énergie qu’utilisent les Jedi, 5 lettres.",
       "lumos": "Tape le sort de sorcier qui allume une baguette, 5 lettres.",
       "noir": "Touche le © du pied de page 5 fois, vite.",
-      "midnight": "Visite ce site pendant que le monde dort, entre minuit et 5 h du matin."
+      "flux": "Tape le nom de la voiture en acier inoxydable qui voyage dans le temps."
     },
     "intro": {
       "title": "Ce site a des secrets",
@@ -204,8 +204,7 @@
     "kind": {
       "type": "Tape-le",
       "click": "Clique",
-      "keys": "Appuie sur les touches",
-      "time": "Visite-le"
+      "keys": "Appuie sur les touches"
     },
     "console": {
       "open": "Saisir un code",

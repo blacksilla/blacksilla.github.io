@@ -78,11 +78,11 @@
   --c-accent: 255 255 255;
   --c-accent-2: 90 90 90;
 }
-[data-theme="midnight"] {
-  --c-ink: 7 10 26;
-  --c-ink-soft: 14 19 44;
-  --c-bone: 226 230 250;
-  --c-bone-muted: 150 160 208;
-  --c-accent: 160 150 255;
-  --c-accent-2: 60 55 140;
+[data-theme="flux"] {
+  --c-ink: 9 12 18;
+  --c-ink-soft: 17 22 32;
+  --c-bone: 232 237 243;
+  --c-bone-muted: 150 162 178;
+  --c-accent: 140 220 255;
+  --c-accent-2: 255 92 40;
 }

@@ -1,13 +1,8 @@
-// Easter eggs: key sequences (via useSecrets), click streaks (7 on the wordmark, 5 on the footer ©) and a night visit.
+// Easter eggs: key sequences (via useSecrets), and click streaks (7 on the wordmark, 5 on the footer ©).
 export default defineNuxtPlugin((nuxtApp) => {
   const { load } = useTheme()
   const { feed, found, progress } = useSecrets()
-  const { unlocked } = useTheme()
-  nuxtApp.hook('app:mounted', () => {
-    load()
-    // Night owl: visiting between 00:00 and 04:59 local time unlocks 'midnight' (a touch-friendly secret).
-    if (new Date().getHours() < 5 && !unlocked.value.includes('midnight')) setTimeout(() => found('midnight'), 2500)
-  })
+  nuxtApp.hook('app:mounted', load)
   // [selector value, clicks needed, window ms, theme]
   const STREAKS: Array<[string, number, number, ThemeId]> = [['wordmark', 7, 4000, 'synthwave'], ['copyright', 5, 3000, 'noir']]
   const clicks: Record<string, number[]> = {}

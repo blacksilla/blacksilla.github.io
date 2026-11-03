@@ -180,7 +180,7 @@
       "jedi": "Saber",
       "lumos": "Candlelight",
       "noir": "Noir",
-      "midnight": "Midnight"
+      "flux": "Flux"
     },
     "hints": {
       "ember": "Sempre acesa.",
@@ -193,7 +193,7 @@
       "jedi": "Escreve o campo de energia que os Jedi usam, com 5 letras.",
       "lumos": "Escreve o feitiço do feiticeiro que ilumina uma varinha, com 5 letras.",
       "noir": "Toca no © do rodapé 5 vezes, depressa.",
-      "midnight": "Visita este site enquanto o mundo dorme, entre a meia-noite e as 5 da manhã."
+      "flux": "Escreve o nome do carro de aço inoxidável que viaja no tempo."
     },
     "intro": {
       "title": "Este site tem segredos",
@@ -204,8 +204,7 @@
     "kind": {
       "type": "Escreve",
       "click": "Clica",
-      "keys": "Carrega nas teclas",
-      "time": "Visita"
+      "keys": "Carrega nas teclas"
     },
     "console": {
       "open": "Introduzir um código",
