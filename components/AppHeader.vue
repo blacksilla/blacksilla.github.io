@@ -3,10 +3,19 @@ const { t, locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const items = ['about', 'projects', 'stack', 'journey', 'contact']
 const langs = computed(() => (locales.value as any[]).map((l) => ({ code: l.code, name: l.name })))
+// Publish the real header height (it wraps on narrow screens) so the hero can fit the fold exactly.
+const bar = ref<HTMLElement | null>(null)
+onMounted(() => {
+  if (!bar.value) return
+  const set = () => document.documentElement.style.setProperty('--hdr', `${bar.value!.offsetHeight}px`)
+  const ro = new ResizeObserver(set)
+  ro.observe(bar.value); set()
+  onBeforeUnmount(() => ro.disconnect())
+})
 </script>
 
 <template>
-  <header class="sticky top-0 z-40 border-b border-hairline bg-ink/90 backdrop-blur-sm">
+  <header ref="bar" class="sticky top-0 z-40 border-b border-hairline bg-ink/90 backdrop-blur-sm">
     <div class="mx-auto flex max-w-stage flex-wrap items-center justify-between gap-x-8 gap-y-2 px-gutter py-4">
       <a href="#top" data-secret="wordmark" data-cursor-hover class="font-serif text-lg">{{ t('hero.name') }}</a>
       <nav :aria-label="t('nav.about')" class="order-3 w-full min-w-0 md:order-none md:w-auto">

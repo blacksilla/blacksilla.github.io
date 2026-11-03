@@ -179,17 +179,32 @@
     },
     "hints": {
       "ember": "Always lit.",
-      "kanto": "Say the name of a small yellow friend.",
-      "saiyan": "Shout it, politely, in a foreign tongue.",
-      "matrix": "Follow the white rabbit, or just take a pill.",
-      "synthwave": "Be persistent with the name at the top.",
-      "gameboy": "Some codes are older than the web."
+      "kanto": "Type the name of the yellow electric mouse.",
+      "saiyan": "Type the name of the famous energy attack from the orange anime.",
+      "matrix": "Type the name of the chosen one, 3 letters.",
+      "synthwave": "Click or tap my name, top left, 7 times, fast.",
+      "gameboy": "The most famous cheat code in video games: up, up, down, down, left, right, left, right, B, A. On touch, use the pad."
     },
     "intro": {
       "title": "This site has secrets",
       "body": "Five hidden themes are waiting. Type, click or press the right thing and the whole site changes. A few clues:",
       "close": "Got it"
     },
-    "idle": "Five themes are hidden. Hover or tap a ? for a clue."
+    "idle": "Five themes are hidden. Tap or hover a ? for a clue, or enter a code.",
+    "kind": {
+      "type": "Type it",
+      "click": "Click it",
+      "keys": "Press the keys"
+    },
+    "console": {
+      "open": "Enter a code",
+      "title": "Secret codes",
+      "placeholder": "Type a code",
+      "submit": "Go",
+      "wrong": "Nothing happened. Try another.",
+      "pad": "Pad",
+      "close": "Close",
+      "typing": "Typing a code…"
+    }
   }
 }
