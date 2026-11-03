@@ -179,17 +179,32 @@
     },
     "hints": {
       "ember": "Toujours allumée.",
-      "kanto": "Dis le nom d’un petit ami jaune.",
-      "saiyan": "Crie-le, poliment, dans une autre langue.",
-      "matrix": "Suis le lapin blanc, ou prends simplement une pilule.",
-      "synthwave": "Sois persévérant avec le nom tout en haut.",
-      "gameboy": "Certains codes sont plus vieux que le web."
+      "kanto": "Tape le nom de la souris électrique jaune.",
+      "saiyan": "Tape le nom de la célèbre attaque d’énergie de l’anime orange.",
+      "matrix": "Tape le nom de l’élu, 3 lettres.",
+      "synthwave": "Clique ou touche mon nom, en haut à gauche, 7 fois, vite.",
+      "gameboy": "Le code de triche le plus célèbre du jeu vidéo : haut, haut, bas, bas, gauche, droite, gauche, droite, B, A. Sur mobile, utilise la croix."
     },
     "intro": {
       "title": "Ce site a des secrets",
-      "body": "Cinq thèmes sont cachés. Tapez, cliquez ou appuyez sur la bonne chose et tout le site change. Quelques indices :",
+      "body": "Cinq thèmes sont cachés. Tape, clique ou appuie sur la bonne chose et tout le site change. Quelques indices :",
       "close": "Compris"
     },
-    "idle": "Cinq thèmes sont cachés. Survolez ou touchez un ? pour un indice."
+    "idle": "Cinq thèmes sont cachés. Touche ou survole un ? pour un indice, ou saisis un code.",
+    "kind": {
+      "type": "Tape-le",
+      "click": "Clique",
+      "keys": "Appuie sur les touches"
+    },
+    "console": {
+      "open": "Saisir un code",
+      "title": "Codes secrets",
+      "placeholder": "Tape un code",
+      "submit": "Valider",
+      "wrong": "Rien ne s’est passé. Essaie-en un autre.",
+      "pad": "Croix",
+      "close": "Fermer",
+      "typing": "Saisie d’un code…"
+    }
   }
 }

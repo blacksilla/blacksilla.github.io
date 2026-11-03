@@ -179,17 +179,32 @@
     },
     "hints": {
       "ember": "Siempre encendida.",
-      "kanto": "Di el nombre de un pequeño amigo amarillo.",
-      "saiyan": "Grítalo, con educación, en otra lengua.",
-      "matrix": "Sigue al conejo blanco, o toma una pastilla.",
-      "synthwave": "Sé insistente con el nombre de arriba.",
-      "gameboy": "Algunos códigos son más viejos que la web."
+      "kanto": "Escribe el nombre del ratón eléctrico amarillo.",
+      "saiyan": "Escribe el nombre del famoso ataque de energía del anime naranja.",
+      "matrix": "Escribe el nombre del elegido, 3 letras.",
+      "synthwave": "Haz clic o toca mi nombre, arriba a la izquierda, 7 veces, rápido.",
+      "gameboy": "El truco más famoso de los videojuegos: arriba, arriba, abajo, abajo, izquierda, derecha, izquierda, derecha, B, A. En pantalla táctil, usa el pad."
     },
     "intro": {
       "title": "Este sitio tiene secretos",
       "body": "Hay cinco temas ocultos. Escribe, haz clic o pulsa lo correcto y todo el sitio cambia. Algunas pistas:",
       "close": "Entendido"
     },
-    "idle": "Hay cinco temas ocultos. Pasa el ratón o toca un ? para ver una pista."
+    "idle": "Hay cinco temas ocultos. Toca o pasa el ratón por un ? para ver una pista, o introduce un código.",
+    "kind": {
+      "type": "Escríbelo",
+      "click": "Haz clic",
+      "keys": "Pulsa las teclas"
+    },
+    "console": {
+      "open": "Introducir un código",
+      "title": "Códigos secretos",
+      "placeholder": "Escribe un código",
+      "submit": "Ir",
+      "wrong": "No pasó nada. Prueba con otro.",
+      "pad": "Pad",
+      "close": "Cerrar",
+      "typing": "Escribiendo un código…"
+    }
   }
 }

@@ -1,29 +1,20 @@
-// Easter eggs: key sequences, and 7 wordmark clicks in 4s. Matching lives in composables/useTheme.ts.
+// Easter eggs: key sequences (via useSecrets), and 7 wordmark clicks in 4s.
 export default defineNuxtPlugin((nuxtApp) => {
-  const { unlock, toast, load } = useTheme()
+  const { load } = useTheme()
+  const { feed, found, progress } = useSecrets()
   nuxtApp.hook('app:mounted', load)
-  let buffer = ''
   let clicks: number[] = []
-  let timer: ReturnType<typeof setTimeout>
-
-  const found = (id: ThemeId) => {
-    unlock(id)
-    toast.value = id
-    clearTimeout(timer)
-    timer = setTimeout(() => { toast.value = null }, 4000)
-  }
 
   const onKey = (e: KeyboardEvent) => {
     const t = e.target as HTMLElement | null
     if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return
     if (e.ctrlKey || e.metaKey || e.altKey) return
+    if (e.key === 'Enter') return // lets "...B A Enter" work
     const k = e.key.startsWith('Arrow') ? e.key[5]! : e.key.length === 1 ? e.key.toLowerCase() : ''
     if (!k) return
-    buffer = (buffer + k).slice(-16)
-    // Arrows mid-sequence (after 2+ in a row) shouldn't scroll the page.
-    if (/^[UDLR]$/.test(k) && /(UU|UUD|UUDD|UUDDL|UUDDLR|UUDDLRL|UUDDLRLR)$/.test(buffer)) e.preventDefault()
-    const id = matchSecret(buffer)
-    if (id) { buffer = ''; found(id) }
+    feed(k)
+    // Arrows mid-Konami (2+ matched) shouldn't scroll the page.
+    if (/^[UDLR]$/.test(k) && progress.value.matched >= 2) e.preventDefault()
   }
 
   const onClick = (e: MouseEvent) => {
