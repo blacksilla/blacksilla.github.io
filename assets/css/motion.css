@@ -16,7 +16,7 @@
 .js-motion [data-panel]:not([data-seen]) > :first-child > :first-child { clip-path: inset(0 0 100% 0); }
 .js-motion [data-panel]:not([data-seen]) > :nth-child(2) > * { opacity: 0; }
 
-.m-line { display: block; overflow: hidden; padding-bottom: 0.12em; margin-bottom: -0.12em; }
+.m-line { display: block; overflow: hidden; padding: 0 0.06em 0.12em; margin: 0 -0.06em -0.12em; } /* room for glyph overhang */
 .m-line-in { display: block; will-change: transform; }
 
 /* Cursor ring (accent only; system cursor stays visible). */

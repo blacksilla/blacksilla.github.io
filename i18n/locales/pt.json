@@ -179,17 +179,32 @@
     },
     "hints": {
       "ember": "Sempre acesa.",
-      "kanto": "Diz o nome de um pequeno amigo amarelo.",
-      "saiyan": "Grita-o, com boas maneiras, noutra língua.",
-      "matrix": "Segue o coelho branco, ou toma só um comprimido.",
-      "synthwave": "Sê persistente com o nome lá em cima.",
-      "gameboy": "Alguns códigos são mais antigos do que a web."
+      "kanto": "Escreve o nome do rato elétrico amarelo.",
+      "saiyan": "Escreve o nome do famoso ataque de energia do anime laranja.",
+      "matrix": "Escreve o nome do escolhido, com 3 letras.",
+      "synthwave": "Clica ou toca no meu nome, no canto superior esquerdo, 7 vezes, depressa.",
+      "gameboy": "O código mais famoso dos videojogos: cima, cima, baixo, baixo, esquerda, direita, esquerda, direita, B, A. No toque, usa o comando."
     },
     "intro": {
       "title": "Este site tem segredos",
       "body": "Há cinco temas escondidos. Escreve, clica ou carrega na coisa certa e o site muda por completo. Algumas pistas:",
       "close": "Entendido"
     },
-    "idle": "Há cinco temas escondidos. Passa o rato ou toca num ? para uma pista."
+    "idle": "Há cinco temas escondidos. Toca ou passa o rato num ? para uma pista, ou introduz um código.",
+    "kind": {
+      "type": "Escreve",
+      "click": "Clica",
+      "keys": "Carrega nas teclas"
+    },
+    "console": {
+      "open": "Introduzir um código",
+      "title": "Códigos secretos",
+      "placeholder": "Escreve um código",
+      "submit": "Ir",
+      "wrong": "Nada aconteceu. Tenta outro.",
+      "pad": "Comando",
+      "close": "Fechar",
+      "typing": "A escrever um código…"
+    }
   }
 }

@@ -179,17 +179,32 @@
     },
     "hints": {
       "ember": "Immer an.",
-      "kanto": "Sprich den Namen eines kleinen gelben Freundes.",
-      "saiyan": "Ruf es, höflich, in einer fremden Sprache.",
-      "matrix": "Folge dem weißen Kaninchen, oder nimm einfach eine Pille.",
-      "synthwave": "Sei beharrlich mit dem Namen ganz oben.",
-      "gameboy": "Manche Codes sind älter als das Web."
+      "kanto": "Tippe den Namen der gelben Elektromaus.",
+      "saiyan": "Tippe den Namen der berühmten Energieattacke aus dem orangen Anime.",
+      "matrix": "Tippe den Namen des Auserwählten, 3 Buchstaben.",
+      "synthwave": "Klicke oder tippe 7-mal schnell auf meinen Namen oben links.",
+      "gameboy": "Der berühmteste Cheat-Code der Videospiele: hoch, hoch, runter, runter, links, rechts, links, rechts, B, A. Auf Touchscreens nimm das Pad."
     },
     "intro": {
       "title": "Diese Seite hat Geheimnisse",
       "body": "Fünf Themes sind versteckt. Tippe, klicke oder drücke das Richtige, und die ganze Seite verändert sich. Ein paar Hinweise:",
       "close": "Verstanden"
     },
-    "idle": "Fünf Themes sind versteckt. Fahr über ein ? oder tippe darauf für einen Hinweis."
+    "idle": "Fünf Themes sind versteckt. Tippe oder fahre über ein ? für einen Hinweis, oder gib einen Code ein.",
+    "kind": {
+      "type": "Tippen",
+      "click": "Klicken",
+      "keys": "Tasten drücken"
+    },
+    "console": {
+      "open": "Code eingeben",
+      "title": "Geheime Codes",
+      "placeholder": "Code eingeben",
+      "submit": "Los",
+      "wrong": "Nichts passiert. Versuch einen anderen.",
+      "pad": "Pad",
+      "close": "Schließen",
+      "typing": "Code wird eingegeben…"
+    }
   }
 }

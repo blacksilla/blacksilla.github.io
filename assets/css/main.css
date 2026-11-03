@@ -2,11 +2,20 @@
   --ease-suave: cubic-bezier(0.22, 1, 0.36, 1);
   --dur-slow: 1.4s;
   --dur-eased: 1s;
+  --hero-name: clamp(3.25rem, min(17vw, 22svh), 28rem);
+  --hero-pad-top: clamp(4.5rem, 11svh, 8rem);
+  --hero-pad-bottom: clamp(2.6rem, 7svh, 6rem);
 }
 
 html { background: rgb(var(--c-ink)); color: rgb(var(--c-bone)); -webkit-font-smoothing: antialiased; }
 /* Ultrawide: scale rem-based sizes up smoothly from 1920px (16px) to ~3440px (24px). */
-@media (min-width: 1920px) { html { font-size: min(24px, calc(16px + (100vw - 1920px) * 0.00526)); } }
+/* Also capped by height (svh/54) so very wide but short windows don't scale up past what fits. */
+@media (min-width: 1920px) { html { font-size: max(16px, min(24px, calc(16px + (100vw - 1920px) * 0.00526), calc(100svh / 54))); } }
+/* With the portrait column (lg+) the name only gets 7/12 of the width: the word 'Afonso' is ~3.1em wide. */
+@media (min-width: 1024px) { :root { --hero-name: clamp(3.25rem, min(15vw, 22svh), 28rem); } }
+/* Header height before JS measures it (it wraps on narrow screens): right values avoid a layout shift on hydration. */
+@media (max-width: 1023px) { :root { --hdr: 5.6rem; } }
+@media (max-width: 639px) { :root { --hdr: 7rem; } }
 body { font-family: Inter, system-ui, sans-serif; background: rgb(var(--c-ink)); }
 ::selection { background: rgb(var(--c-accent)); color: rgb(var(--c-ink)); }
 :focus-visible { outline: 2px solid rgb(var(--c-accent)); outline-offset: 4px; }
