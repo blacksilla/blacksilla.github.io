@@ -36,22 +36,21 @@
     },
     "items": [
       {
-        "title": "Website com CMS à medida",
-        "summary": "O site público e o sistema de gestão de conteúdos que o sustenta, construídos com Vue 3 e .NET.",
-        "stack": [
-          "Vue 3",
-          ".NET",
-          "SQL Server"
-        ],
-        "status": "inProgress"
-      },
-      {
         "summary": "Um site desenhado e construído de ponta a ponta em Vue.",
         "stack": [
           "Vue"
         ],
         "status": "live",
         "url": "https://highfield.pt"
+      },
+      {
+        "summary": "Um site e um painel de oficina para um técnico de guitarras: reparações, inventário e faturas.",
+        "stack": [
+          "Next.js",
+          "Supabase",
+          "Tailwind"
+        ],
+        "status": "comingSoon"
       },
       {
         "summary": "Misturas pessoais de auscultadores para o RME TotalMix FX, controladas no telemóvel de cada músico através de um código QR. Funciona como aplicação de desktop offline.",
@@ -161,9 +160,9 @@
   },
   "_todo": [
     "meta.description",
-    "projects.items[0].stack",
     "projects.items[2].stack",
-    "journey.education_items[*].text"
+    "journey.education_items[*].text",
+    "projects.items[1].stack"
   ],
   "themes": {
     "heading": "Temas",

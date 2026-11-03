@@ -36,22 +36,21 @@
     },
     "items": [
       {
-        "title": "Website mit individuellem CMS",
-        "summary": "Die öffentliche Website und das dahinterliegende Content-Management-System, gebaut mit Vue 3 und .NET.",
-        "stack": [
-          "Vue 3",
-          ".NET",
-          "SQL Server"
-        ],
-        "status": "inProgress"
-      },
-      {
         "summary": "Eine Website, durchgängig in Vue entworfen und umgesetzt.",
         "stack": [
           "Vue"
         ],
         "status": "live",
         "url": "https://highfield.pt"
+      },
+      {
+        "summary": "Eine Website und ein Werkstatt-Dashboard für einen Gitarrentechniker: Reparaturen, Inventar und Rechnungen.",
+        "stack": [
+          "Next.js",
+          "Supabase",
+          "Tailwind"
+        ],
+        "status": "comingSoon"
       },
       {
         "summary": "Persönliche Kopfhörer-Mixe für RME TotalMix FX, per QR-Code vom Smartphone jedes Musikers aus gesteuert. Läuft als Desktop-App ohne Internetverbindung.",
@@ -161,9 +160,9 @@
   },
   "_todo": [
     "meta.description",
-    "projects.items[0].stack",
     "projects.items[2].stack",
-    "journey.education_items[*].text"
+    "journey.education_items[*].text",
+    "projects.items[1].stack"
   ],
   "themes": {
     "heading": "Themes",
