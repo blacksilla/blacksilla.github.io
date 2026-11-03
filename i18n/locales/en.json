@@ -36,22 +36,21 @@
     },
     "items": [
       {
-        "title": "Website + custom CMS",
-        "summary": "The public site and the content management system behind it, built with Vue 3 and .NET.",
-        "stack": [
-          "Vue 3",
-          ".NET",
-          "SQL Server"
-        ],
-        "status": "inProgress"
-      },
-      {
         "summary": "A website designed and built end to end in Vue.",
         "stack": [
           "Vue"
         ],
         "status": "live",
         "url": "https://highfield.pt"
+      },
+      {
+        "summary": "A site and workshop dashboard for a guitar tech: repair jobs, inventory and invoices.",
+        "stack": [
+          "Next.js",
+          "Supabase",
+          "Tailwind"
+        ],
+        "status": "comingSoon"
       },
       {
         "summary": "Personal headphone mixes for RME TotalMix FX, controlled from each musician's phone through a QR code. Runs as an offline desktop app.",
@@ -161,9 +160,9 @@
   },
   "_todo": [
     "meta.description",
-    "projects.items[0].stack",
     "projects.items[2].stack",
-    "journey.education_items[*].text"
+    "journey.education_items[*].text",
+    "projects.items[1].stack"
   ],
   "themes": {
     "heading": "Themes",
@@ -180,7 +179,7 @@
       "jedi": "Saber",
       "lumos": "Candlelight",
       "noir": "Noir",
-      "midnight": "Midnight"
+      "flux": "Flux"
     },
     "hints": {
       "ember": "Always lit.",
@@ -193,7 +192,7 @@
       "jedi": "Type the energy field that the Jedi use, 5 letters.",
       "lumos": "Type the wizard's spell that lights a wand, 5 letters.",
       "noir": "Tap the © in the footer 5 times, fast.",
-      "midnight": "Visit this site while the world sleeps, between midnight and 5 a.m."
+      "flux": "Type the name of the stainless steel car that travels through time."
     },
     "intro": {
       "title": "This site has secrets",
@@ -204,8 +203,7 @@
     "kind": {
       "type": "Type it",
       "click": "Click it",
-      "keys": "Press the keys",
-      "time": "Visit it"
+      "keys": "Press the keys"
     },
     "console": {
       "open": "Enter a code",

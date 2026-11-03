@@ -36,22 +36,21 @@
     },
     "items": [
       {
-        "title": "Website com CMS à medida",
-        "summary": "O site público e o sistema de gestão de conteúdos que o sustenta, construídos com Vue 3 e .NET.",
-        "stack": [
-          "Vue 3",
-          ".NET",
-          "SQL Server"
-        ],
-        "status": "inProgress"
-      },
-      {
         "summary": "Um site desenhado e construído de ponta a ponta em Vue.",
         "stack": [
           "Vue"
         ],
         "status": "live",
         "url": "https://highfield.pt"
+      },
+      {
+        "summary": "Um site e um painel de oficina para um técnico de guitarras: reparações, inventário e faturas.",
+        "stack": [
+          "Next.js",
+          "Supabase",
+          "Tailwind"
+        ],
+        "status": "comingSoon"
       },
       {
         "summary": "Misturas pessoais de auscultadores para o RME TotalMix FX, controladas no telemóvel de cada músico através de um código QR. Funciona como aplicação de desktop offline.",
@@ -161,9 +160,9 @@
   },
   "_todo": [
     "meta.description",
-    "projects.items[0].stack",
     "projects.items[2].stack",
-    "journey.education_items[*].text"
+    "journey.education_items[*].text",
+    "projects.items[1].stack"
   ],
   "themes": {
     "heading": "Temas",
@@ -180,7 +179,7 @@
       "jedi": "Saber",
       "lumos": "Candlelight",
       "noir": "Noir",
-      "midnight": "Midnight"
+      "flux": "Flux"
     },
     "hints": {
       "ember": "Sempre acesa.",
@@ -193,7 +192,7 @@
       "jedi": "Escreve o campo de energia que os Jedi usam, com 5 letras.",
       "lumos": "Escreve o feitiço do feiticeiro que ilumina uma varinha, com 5 letras.",
       "noir": "Toca no © do rodapé 5 vezes, depressa.",
-      "midnight": "Visita este site enquanto o mundo dorme, entre a meia-noite e as 5 da manhã."
+      "flux": "Escreve o nome do carro de aço inoxidável que viaja no tempo."
     },
     "intro": {
       "title": "Este site tem segredos",
@@ -204,8 +203,7 @@
     "kind": {
       "type": "Escreve",
       "click": "Clica",
-      "keys": "Carrega nas teclas",
-      "time": "Visita"
+      "keys": "Carrega nas teclas"
     },
     "console": {
       "open": "Introduzir um código",

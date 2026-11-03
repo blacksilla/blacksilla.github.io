@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// A short, simple SVG animation played when a secret is found (or a theme is picked again).
+// A short, simple SVG animation played the first time a secret is found.
 // Plain geometric nods only, coloured with the active theme's variables; purely decorative.
 const { burst } = useSecrets()
 let timer: ReturnType<typeof setTimeout>
@@ -80,10 +80,16 @@ const slats = Array.from({ length: 9 }, (_, i) => i)
           <circle cx="100" cy="100" r="38" stroke="rgb(var(--c-bone))" stroke-width="2.5" class="a a-fade" />
           <rect v-for="i in slats" :key="i" x="0" :y="(i - 1) * 22.2" width="200" height="22.2" fill="rgb(var(--c-bone))" class="a a-open" :style="{ '--d': `${0.2 + (i - 1) * 0.06}s` }" />
         </g>
-        <!-- midnight: a crescent moon and twinkling stars -->
-        <g v-else-if="burst.id === 'midnight'">
-          <path d="M112 38 A62 62 0 1 0 112 162 A48 48 0 1 1 112 38 Z" fill="rgb(var(--c-accent))" class="a a-rise" />
-          <circle v-for="(s, i) in stars" :key="i" :cx="s[0]" :cy="s[1]" :r="i % 3 ? 2 : 3" fill="rgb(var(--c-bone))" class="a a-twinkle" :style="{ '--d': `${i * 0.17}s` }" />
+        <!-- flux: a flux-capacitor "Y", speed streaks and an 88 readout -->
+        <g v-else-if="burst.id === 'flux'">
+          <line v-for="(y, i) in [104, 118, 132]" :key="'l' + y" :x1="12" :y1="y" :x2="62 - i * 8" :y2="y" stroke="rgb(var(--c-accent-2))" stroke-width="3" stroke-linecap="round" class="a a-streak a-streak-l" :style="{ '--d': `${0.15 + i * 0.1}s` }" />
+          <line v-for="(y, i) in [104, 118, 132]" :key="'r' + y" :x1="188" :y1="y" :x2="138 + i * 8" :y2="y" stroke="rgb(var(--c-accent-2))" stroke-width="3" stroke-linecap="round" class="a a-streak a-streak-r" :style="{ '--d': `${0.15 + i * 0.1}s` }" />
+          <g class="a a-pulse2" stroke="rgb(var(--c-accent))" stroke-linecap="round" fill="none">
+            <g stroke-width="16" opacity="0.2"><line x1="100" y1="96" x2="100" y2="160" /><line x1="100" y1="96" x2="48" y2="40" /><line x1="100" y1="96" x2="152" y2="40" /></g>
+            <g stroke-width="6"><line x1="100" y1="96" x2="100" y2="160" /><line x1="100" y1="96" x2="48" y2="40" /><line x1="100" y1="96" x2="152" y2="40" /></g>
+          </g>
+          <circle cx="100" cy="96" r="9" fill="rgb(var(--c-bone))" class="a a-pop" />
+          <text x="100" y="192" text-anchor="middle" font-family="ui-monospace, monospace" font-size="34" font-weight="700" fill="rgb(var(--c-accent))" class="a a-blink">88</text>
         </g>
       </svg>
     </div>
@@ -105,6 +111,11 @@ const slats = Array.from({ length: 9 }, (_, i) => i)
 .a-twinkle { animation-name: twinkle; animation-duration: 1.4s; animation-iteration-count: 2; }
 .a-glow { animation-name: glow; animation-duration: 1.8s; }
 .a-open { transform-origin: center; animation-name: open; animation-duration: 0.7s; }
+.a-streak { animation-name: streak; animation-duration: 1s; }
+.a-streak-l { transform-origin: left center; }
+.a-streak-r { transform-origin: right center; }
+.a-pulse2 { animation-name: pulse2; animation-duration: 0.9s; animation-iteration-count: 2; }
+.a-blink { animation-name: blink; animation-duration: 1.4s; }
 @keyframes pop { 0% { transform: scale(0.2); opacity: 0 } 55% { transform: scale(1.1); opacity: 1 } 100% { transform: scale(1); opacity: 1 } }
 @keyframes spark { 0% { opacity: 0; transform: scale(0.4) } 40% { opacity: 1 } 100% { opacity: 0; transform: scale(1.3) } }
 @keyframes ring { 0% { transform: scale(0.2); opacity: 0.9 } 100% { transform: scale(2.6); opacity: 0 } }
@@ -117,10 +128,13 @@ const slats = Array.from({ length: 9 }, (_, i) => i)
 @keyframes twinkle { 0%, 100% { opacity: 0.15 } 50% { opacity: 1 } }
 @keyframes glow { 0% { transform: scale(1); opacity: 0.35 } 100% { transform: scale(11); opacity: 0 } }
 @keyframes open { to { transform: scaleY(0) } }
+@keyframes streak { 0% { transform: scaleX(0); opacity: 0 } 50% { opacity: 1 } 100% { transform: scaleX(1); opacity: 0.25 } }
+@keyframes pulse2 { 0% { opacity: 0.2 } 50% { opacity: 1 } 100% { opacity: 1 } }
+@keyframes blink { 0%, 20% { opacity: 0 } 25% { opacity: 1 } 40% { opacity: 0.2 } 55%, 100% { opacity: 1 } }
 @keyframes flash { 0% { opacity: 0 } 15% { opacity: 0.16 } 100% { opacity: 0 } }
 @media (prefers-reduced-motion: reduce) {
   .a, .burst-flash { animation: none !important; opacity: 1; }
   .burst-flash { opacity: 0; }
-  .a-ring, .a-beam, .a-open, .a-glow { display: none; }
+  .a-ring, .a-beam, .a-open, .a-glow, .a-streak { display: none; }
 }
 </style>
