@@ -171,11 +171,16 @@
     "toast": "Tema desbloqueado: {name}",
     "names": {
       "ember": "Ember",
-      "kanto": "Kanto",
+      "kanto": "Volt",
       "saiyan": "Saiyan",
       "matrix": "Matrix",
       "synthwave": "Synthwave",
-      "gameboy": "Handheld"
+      "gameboy": "Handheld",
+      "hyrule": "Evergreen",
+      "jedi": "Saber",
+      "lumos": "Candlelight",
+      "noir": "Noir",
+      "midnight": "Midnight"
     },
     "hints": {
       "ember": "Sempre acesa.",
@@ -183,18 +188,24 @@
       "saiyan": "Escreve o nome do famoso ataque de energia do anime laranja.",
       "matrix": "Escreve o nome do escolhido, com 3 letras.",
       "synthwave": "Clica ou toca no meu nome, no canto superior esquerdo, 7 vezes, depressa.",
-      "gameboy": "O código mais famoso dos videojogos: cima, cima, baixo, baixo, esquerda, direita, esquerda, direita, B, A. No toque, usa o comando."
+      "gameboy": "O código mais famoso dos videojogos: cima, cima, baixo, baixo, esquerda, direita, esquerda, direita, B, A. No toque, usa o comando.",
+      "hyrule": "Escreve o nome da princesa que dá o nome ao jogo sobre o Link.",
+      "jedi": "Escreve o campo de energia que os Jedi usam, com 5 letras.",
+      "lumos": "Escreve o feitiço do feiticeiro que ilumina uma varinha, com 5 letras.",
+      "noir": "Toca no © do rodapé 5 vezes, depressa.",
+      "midnight": "Visita este site enquanto o mundo dorme, entre a meia-noite e as 5 da manhã."
     },
     "intro": {
       "title": "Este site tem segredos",
-      "body": "Há cinco temas escondidos. Escreve, clica ou carrega na coisa certa e o site muda por completo. Algumas pistas:",
+      "body": "Há {count} temas escondidos à espera. Escreve, clica ou carrega na coisa certa e o site muda por completo. Algumas pistas:",
       "close": "Entendido"
     },
-    "idle": "Há cinco temas escondidos. Toca ou passa o rato num ? para uma pista, ou introduz um código.",
+    "idle": "Há {count} temas escondidos. Toca ou passa o rato num ? para uma pista, ou introduz um código.",
     "kind": {
       "type": "Escreve",
       "click": "Clica",
-      "keys": "Carrega nas teclas"
+      "keys": "Carrega nas teclas",
+      "time": "Visita"
     },
     "console": {
       "open": "Introduzir um código",
@@ -205,6 +216,7 @@
       "pad": "Comando",
       "close": "Fechar",
       "typing": "A escrever um código…"
-    }
+    },
+    "allDone": "Todos os temas estão desbloqueados. Bem jogado."
   }
 }

@@ -171,11 +171,16 @@
     "toast": "Theme unlocked: {name}",
     "names": {
       "ember": "Ember",
-      "kanto": "Kanto",
+      "kanto": "Volt",
       "saiyan": "Saiyan",
       "matrix": "Matrix",
       "synthwave": "Synthwave",
-      "gameboy": "Handheld"
+      "gameboy": "Handheld",
+      "hyrule": "Evergreen",
+      "jedi": "Saber",
+      "lumos": "Candlelight",
+      "noir": "Noir",
+      "midnight": "Midnight"
     },
     "hints": {
       "ember": "Always lit.",
@@ -183,18 +188,24 @@
       "saiyan": "Type the name of the famous energy attack from the orange anime.",
       "matrix": "Type the name of the chosen one, 3 letters.",
       "synthwave": "Click or tap my name, top left, 7 times, fast.",
-      "gameboy": "The most famous cheat code in video games: up, up, down, down, left, right, left, right, B, A. On touch, use the pad."
+      "gameboy": "The most famous cheat code in video games: up, up, down, down, left, right, left, right, B, A. On touch, use the pad.",
+      "hyrule": "Type the name of the princess who lends her name to the game about Link.",
+      "jedi": "Type the energy field that the Jedi use, 5 letters.",
+      "lumos": "Type the wizard's spell that lights a wand, 5 letters.",
+      "noir": "Tap the © in the footer 5 times, fast.",
+      "midnight": "Visit this site while the world sleeps, between midnight and 5 a.m."
     },
     "intro": {
       "title": "This site has secrets",
-      "body": "Five hidden themes are waiting. Type, click or press the right thing and the whole site changes. A few clues:",
+      "body": "{count} hidden themes are waiting. Type, click or press the right thing and the whole site changes. A few clues:",
       "close": "Got it"
     },
-    "idle": "Five themes are hidden. Tap or hover a ? for a clue, or enter a code.",
+    "idle": "{count} themes are hidden. Tap or hover a ? for a clue, or enter a code.",
     "kind": {
       "type": "Type it",
       "click": "Click it",
-      "keys": "Press the keys"
+      "keys": "Press the keys",
+      "time": "Visit it"
     },
     "console": {
       "open": "Enter a code",
@@ -205,6 +216,7 @@
       "pad": "Pad",
       "close": "Close",
       "typing": "Typing a code…"
-    }
+    },
+    "allDone": "Every theme is unlocked. Well played."
   }
 }

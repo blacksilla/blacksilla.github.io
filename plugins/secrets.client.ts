@@ -1,9 +1,16 @@
-// Easter eggs: key sequences (via useSecrets), and 7 wordmark clicks in 4s.
+// Easter eggs: key sequences (via useSecrets), click streaks (7 on the wordmark, 5 on the footer ©) and a night visit.
 export default defineNuxtPlugin((nuxtApp) => {
   const { load } = useTheme()
   const { feed, found, progress } = useSecrets()
-  nuxtApp.hook('app:mounted', load)
-  let clicks: number[] = []
+  const { unlocked } = useTheme()
+  nuxtApp.hook('app:mounted', () => {
+    load()
+    // Night owl: visiting between 00:00 and 04:59 local time unlocks 'midnight' (a touch-friendly secret).
+    if (new Date().getHours() < 5 && !unlocked.value.includes('midnight')) setTimeout(() => found('midnight'), 2500)
+  })
+  // [selector value, clicks needed, window ms, theme]
+  const STREAKS: Array<[string, number, number, ThemeId]> = [['wordmark', 7, 4000, 'synthwave'], ['copyright', 5, 3000, 'noir']]
+  const clicks: Record<string, number[]> = {}
 
   const onKey = (e: KeyboardEvent) => {
     const t = e.target as HTMLElement | null
@@ -18,10 +25,13 @@ export default defineNuxtPlugin((nuxtApp) => {
   }
 
   const onClick = (e: MouseEvent) => {
-    if (!(e.target as HTMLElement | null)?.closest?.('[data-secret="wordmark"]')) return
+    const el = (e.target as HTMLElement | null)?.closest?.('[data-secret]') as HTMLElement | null | undefined
+    const rule = STREAKS.find(([name]) => name === el?.dataset.secret)
+    if (!rule) return
+    const [name, need, win, id] = rule
     const now = Date.now()
-    clicks = [...clicks, now].filter(c => now - c <= 4000)
-    if (clicks.length >= 7) { clicks = []; found('synthwave') }
+    clicks[name] = [...(clicks[name] || []), now].filter(c => now - c <= win)
+    if (clicks[name].length >= need) { clicks[name] = []; found(id) }
   }
 
   window.addEventListener('keydown', onKey)
