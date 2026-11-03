@@ -1,15 +1,24 @@
-export const THEMES = ['ember', 'kanto', 'saiyan', 'matrix', 'synthwave', 'gameboy'] as const
+export const THEMES = ['ember', 'kanto', 'saiyan', 'matrix', 'synthwave', 'gameboy', 'hyrule', 'jedi', 'lumos', 'noir', 'midnight'] as const
 export type ThemeId = typeof THEMES[number]
 export const THEME_KEY = 'theme'
 export const UNLOCKED_KEY = 'themes-unlocked'
 
+// How each theme unlocks (drives the clue label): type a word, click/tap, press keys, or visit at a time.
+export const THEME_KIND: Partial<Record<ThemeId, 'type' | 'click' | 'keys' | 'time'>> = {
+  kanto: 'type', saiyan: 'type', matrix: 'type', hyrule: 'type', jedi: 'type', lumos: 'type',
+  synthwave: 'click', noir: 'click', gameboy: 'keys', midnight: 'time',
+}
+
 // Keys are normalised to one char each: letters lowercase, arrows U/D/L/R (see secrets.client.ts).
-// Synthwave is unlocked by the wordmark click streak, not here.
+// Synthwave (wordmark clicks), noir (copyright taps) and midnight (night visit) are not typed codes: see secrets.client.ts.
 export const SECRETS: Array<[string, ThemeId]> = [
   ['UUDDLRLRba', 'gameboy'],
   ['pikachu', 'kanto'], ['kanto', 'kanto'],
   ['kamehameha', 'saiyan'], ['saiyan', 'saiyan'],
   ['neo', 'matrix'], ['matrix', 'matrix'],
+  ['zelda', 'hyrule'], ['hyrule', 'hyrule'],
+  ['force', 'jedi'], ['fuerza', 'jedi'], ['forca', 'jedi'], ['força', 'jedi'], ['macht', 'jedi'], ['jedi', 'jedi'],
+  ['lumos', 'lumos'],
 ]
 export const matchSecret = (buffer: string): ThemeId | null =>
   SECRETS.find(([code]) => buffer.endsWith(code))?.[1] ?? null

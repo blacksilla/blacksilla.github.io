@@ -171,11 +171,16 @@
     "toast": "Thème débloqué : {name}",
     "names": {
       "ember": "Ember",
-      "kanto": "Kanto",
+      "kanto": "Volt",
       "saiyan": "Saiyan",
       "matrix": "Matrix",
       "synthwave": "Synthwave",
-      "gameboy": "Handheld"
+      "gameboy": "Handheld",
+      "hyrule": "Evergreen",
+      "jedi": "Saber",
+      "lumos": "Candlelight",
+      "noir": "Noir",
+      "midnight": "Midnight"
     },
     "hints": {
       "ember": "Toujours allumée.",
@@ -183,18 +188,24 @@
       "saiyan": "Tape le nom de la célèbre attaque d’énergie de l’anime orange.",
       "matrix": "Tape le nom de l’élu, 3 lettres.",
       "synthwave": "Clique ou touche mon nom, en haut à gauche, 7 fois, vite.",
-      "gameboy": "Le code de triche le plus célèbre du jeu vidéo : haut, haut, bas, bas, gauche, droite, gauche, droite, B, A. Sur mobile, utilise la croix."
+      "gameboy": "Le code de triche le plus célèbre du jeu vidéo : haut, haut, bas, bas, gauche, droite, gauche, droite, B, A. Sur mobile, utilise la croix.",
+      "hyrule": "Tape le nom de la princesse qui donne son nom au jeu dont Link est le héros.",
+      "jedi": "Tape le champ d’énergie qu’utilisent les Jedi, 5 lettres.",
+      "lumos": "Tape le sort de sorcier qui allume une baguette, 5 lettres.",
+      "noir": "Touche le © du pied de page 5 fois, vite.",
+      "midnight": "Visite ce site pendant que le monde dort, entre minuit et 5 h du matin."
     },
     "intro": {
       "title": "Ce site a des secrets",
-      "body": "Cinq thèmes sont cachés. Tape, clique ou appuie sur la bonne chose et tout le site change. Quelques indices :",
+      "body": "{count} thèmes cachés t’attendent. Tape, clique ou appuie sur la bonne chose et tout le site change. Quelques indices :",
       "close": "Compris"
     },
-    "idle": "Cinq thèmes sont cachés. Touche ou survole un ? pour un indice, ou saisis un code.",
+    "idle": "{count} thèmes sont cachés. Touche ou survole un ? pour un indice, ou saisis un code.",
     "kind": {
       "type": "Tape-le",
       "click": "Clique",
-      "keys": "Appuie sur les touches"
+      "keys": "Appuie sur les touches",
+      "time": "Visite-le"
     },
     "console": {
       "open": "Saisir un code",
@@ -205,6 +216,7 @@
       "pad": "Croix",
       "close": "Fermer",
       "typing": "Saisie d’un code…"
-    }
+    },
+    "allDone": "Tous les thèmes sont débloqués. Bien joué."
   }
 }

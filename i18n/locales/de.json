@@ -171,11 +171,16 @@
     "toast": "Theme freigeschaltet: {name}",
     "names": {
       "ember": "Ember",
-      "kanto": "Kanto",
+      "kanto": "Volt",
       "saiyan": "Saiyan",
       "matrix": "Matrix",
       "synthwave": "Synthwave",
-      "gameboy": "Handheld"
+      "gameboy": "Handheld",
+      "hyrule": "Evergreen",
+      "jedi": "Saber",
+      "lumos": "Candlelight",
+      "noir": "Noir",
+      "midnight": "Midnight"
     },
     "hints": {
       "ember": "Immer an.",
@@ -183,18 +188,24 @@
       "saiyan": "Tippe den Namen der berühmten Energieattacke aus dem orangen Anime.",
       "matrix": "Tippe den Namen des Auserwählten, 3 Buchstaben.",
       "synthwave": "Klicke oder tippe 7-mal schnell auf meinen Namen oben links.",
-      "gameboy": "Der berühmteste Cheat-Code der Videospiele: hoch, hoch, runter, runter, links, rechts, links, rechts, B, A. Auf Touchscreens nimm das Pad."
+      "gameboy": "Der berühmteste Cheat-Code der Videospiele: hoch, hoch, runter, runter, links, rechts, links, rechts, B, A. Auf Touchscreens nimm das Pad.",
+      "hyrule": "Tippe den Namen der Prinzessin, die dem Spiel um Link ihren Namen gibt.",
+      "jedi": "Tippe das Energiefeld, das die Jedi nutzen, 5 Buchstaben.",
+      "lumos": "Tippe den Zauberspruch, der einen Zauberstab leuchten lässt, 5 Buchstaben.",
+      "noir": "Tippe 5-mal schnell auf das © in der Fußzeile.",
+      "midnight": "Besuche diese Seite, während die Welt schläft, zwischen Mitternacht und 5 Uhr morgens."
     },
     "intro": {
       "title": "Diese Seite hat Geheimnisse",
-      "body": "Fünf Themes sind versteckt. Tippe, klicke oder drücke das Richtige, und die ganze Seite verändert sich. Ein paar Hinweise:",
+      "body": "{count} versteckte Themes warten. Tippe, klicke oder drücke das Richtige, und die ganze Seite verändert sich. Ein paar Hinweise:",
       "close": "Verstanden"
     },
-    "idle": "Fünf Themes sind versteckt. Tippe oder fahre über ein ? für einen Hinweis, oder gib einen Code ein.",
+    "idle": "{count} Themes sind versteckt. Tippe oder fahre über ein ? für einen Hinweis, oder gib einen Code ein.",
     "kind": {
       "type": "Tippen",
       "click": "Klicken",
-      "keys": "Tasten drücken"
+      "keys": "Tasten drücken",
+      "time": "Besuche es"
     },
     "console": {
       "open": "Code eingeben",
@@ -205,6 +216,7 @@
       "pad": "Pad",
       "close": "Schließen",
       "typing": "Code wird eingegeben…"
-    }
+    },
+    "allDone": "Alle Themes sind freigeschaltet. Gut gespielt."
   }
 }

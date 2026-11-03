@@ -171,11 +171,16 @@
     "toast": "Tema desbloqueado: {name}",
     "names": {
       "ember": "Ember",
-      "kanto": "Kanto",
+      "kanto": "Volt",
       "saiyan": "Saiyan",
       "matrix": "Matrix",
       "synthwave": "Synthwave",
-      "gameboy": "Handheld"
+      "gameboy": "Handheld",
+      "hyrule": "Evergreen",
+      "jedi": "Saber",
+      "lumos": "Candlelight",
+      "noir": "Noir",
+      "midnight": "Midnight"
     },
     "hints": {
       "ember": "Siempre encendida.",
@@ -183,18 +188,24 @@
       "saiyan": "Escribe el nombre del famoso ataque de energía del anime naranja.",
       "matrix": "Escribe el nombre del elegido, 3 letras.",
       "synthwave": "Haz clic o toca mi nombre, arriba a la izquierda, 7 veces, rápido.",
-      "gameboy": "El truco más famoso de los videojuegos: arriba, arriba, abajo, abajo, izquierda, derecha, izquierda, derecha, B, A. En pantalla táctil, usa el pad."
+      "gameboy": "El truco más famoso de los videojuegos: arriba, arriba, abajo, abajo, izquierda, derecha, izquierda, derecha, B, A. En pantalla táctil, usa el pad.",
+      "hyrule": "Escribe el nombre de la princesa que da nombre al juego sobre Link.",
+      "jedi": "Escribe el campo de energía que usan los Jedi, 6 letras.",
+      "lumos": "Escribe el hechizo de mago que ilumina una varita, 5 letras.",
+      "noir": "Toca el © del pie de página 5 veces, rápido.",
+      "midnight": "Visita este sitio mientras el mundo duerme, entre la medianoche y las 5 de la madrugada."
     },
     "intro": {
       "title": "Este sitio tiene secretos",
-      "body": "Hay cinco temas ocultos. Escribe, haz clic o pulsa lo correcto y todo el sitio cambia. Algunas pistas:",
+      "body": "Hay {count} temas ocultos esperando. Escribe, haz clic o pulsa lo correcto y todo el sitio cambia. Algunas pistas:",
       "close": "Entendido"
     },
-    "idle": "Hay cinco temas ocultos. Toca o pasa el ratón por un ? para ver una pista, o introduce un código.",
+    "idle": "Hay {count} temas ocultos. Toca o pasa el ratón por un ? para ver una pista, o introduce un código.",
     "kind": {
       "type": "Escríbelo",
       "click": "Haz clic",
-      "keys": "Pulsa las teclas"
+      "keys": "Pulsa las teclas",
+      "time": "Visítalo"
     },
     "console": {
       "open": "Introducir un código",
@@ -205,6 +216,7 @@
       "pad": "Pad",
       "close": "Cerrar",
       "typing": "Escribiendo un código…"
-    }
+    },
+    "allDone": "Todos los temas están desbloqueados. Bien jugado."
   }
 }

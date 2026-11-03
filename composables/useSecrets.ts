@@ -20,11 +20,15 @@ export function useSecrets() {
   const progress = useState('secrets-progress', () => ({ matched: 0, total: 0, visible: false }))
 
   const consoleOpen = useState('secrets-console-open', () => false)
+  // Which theme's animation is playing (SecretBurst.vue); n changes on every play so it restarts.
+  const burst = useState<{ id: ThemeId, n: number } | null>('secrets-burst', () => null)
+  const play = (id: ThemeId) => { if (id !== 'ember') burst.value = { id, n: Date.now() } }
   const clear =() => { buffer = ''; progress.value = { matched: 0, total: 0, visible: false } }
 
   function found(id: ThemeId) {
     clear()
     unlock(id)
+    play(id)
     toast.value = id
     clearTimeout(toastTimer)
     toastTimer = setTimeout(() => { toast.value = null }, 4000)
@@ -53,5 +57,5 @@ export function useSecrets() {
     return !!id
   }
 
-  return { feed, submit, found, progress, consoleOpen }
+  return { feed, submit, found, play, burst, progress, consoleOpen }
 }

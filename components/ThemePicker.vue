@@ -1,15 +1,15 @@
 <script setup lang="ts">
 const { current, unlocked, toast, set } = useTheme()
-const { consoleOpen, progress } = useSecrets()
-const KIND: Partial<Record<ThemeId, string>> = { kanto: 'type', saiyan: 'type', matrix: 'type', synthwave: 'click', gameboy: 'keys' }
+const { consoleOpen, progress, play } = useSecrets()
 const { t } = useI18n()
 const open = (id: ThemeId) => unlocked.value.includes(id)
 // The swatch that was hovered, focused or tapped: its name or riddle shows in the caption (works on touch too).
 const active = ref<ThemeId | null>(null)
+const hidden = computed(() => THEMES.filter(id => !unlocked.value.includes(id)).length)
 const caption = computed(() => {
-  if (!active.value) return t('themes.idle')
+  if (!active.value) return hidden.value ? t('themes.idle', { count: hidden.value }) : t('themes.allDone')
   if (open(active.value)) return t(`themes.names.${active.value}`)
-  return `${t(`themes.kind.${KIND[active.value]}`)}. ${t(`themes.hints.${active.value}`)}`
+  return `${t(`themes.kind.${THEME_KIND[active.value]}`)}. ${t(`themes.hints.${active.value}`)}`
 })
 const label = (id: ThemeId) => open(id) ? t(`themes.names.${id}`) : `${t('themes.locked')}: ${t(`themes.hints.${id}`)}`
 </script>
@@ -17,7 +17,7 @@ const label = (id: ThemeId) => open(id) ? t(`themes.names.${id}`) : `${t('themes
 <template>
   <div class="w-[min(100%,25rem)]">
     <p class="mb-3 text-small uppercase text-bone-muted">{{ $t('themes.heading') }}</p>
-    <ul class="flex items-center gap-3" @mouseleave="active = null">
+    <ul class="flex flex-wrap items-center gap-3" @mouseleave="active = null">
       <li v-for="id in THEMES" :key="id">
         <!-- The button uses the page's own colours; only the inner dot is scoped with data-theme to show that theme's palette. -->
         <button
@@ -27,7 +27,7 @@ const label = (id: ThemeId) => open(id) ? t(`themes.names.${id}`) : `${t('themes
           class="flex h-10 w-10 items-center justify-center rounded-full border border-transparent transition-colors duration-200 hover:border-bone-muted aria-pressed:border-bone"
           :aria-pressed="current === id"
           :aria-label="label(id)"
-          @click="set(id); active = id" @mouseenter="active = id" @focus="active = id" @blur="active = null"
+          @click="set(id); play(id); active = id" @mouseenter="active = id" @focus="active = id" @blur="active = null"
         >
           <span :data-theme="id" class="block h-6 w-6 rounded-full" style="background: linear-gradient(135deg, rgb(var(--c-ink)) 50%, rgb(var(--c-accent)) 50%); box-shadow: inset 0 0 0 1px rgb(var(--c-bone) / 0.25)"></span>
         </button>

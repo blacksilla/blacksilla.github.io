@@ -4,7 +4,6 @@ const { t } = useI18n()
 const { unlocked } = useTheme()
 const { consoleOpen } = useSecrets()
 const KEY = 'secrets-intro-seen'
-const KIND: Partial<Record<ThemeId, string>> = { kanto: 'type', saiyan: 'type', matrix: 'type', synthwave: 'click', gameboy: 'keys' }
 const show = ref(false)
 const expanded = ref(false)
 const locked = computed(() => THEMES.filter(id => !unlocked.value.includes(id)))
@@ -32,10 +31,10 @@ onMounted(() => {
       </div>
       <div v-else class="max-h-[calc(100svh-6rem)] w-[min(26rem,calc(100vw-2rem))] overflow-y-auto border border-hairline bg-ink-soft p-5 max-sm:max-h-[70svh] max-sm:w-full max-sm:border-x-0 max-sm:border-b-0">
         <p class="font-serif text-xl">{{ t('themes.intro.title') }}</p>
-        <p class="mt-2 text-small text-bone-muted">{{ t('themes.intro.body') }}</p>
+        <p class="mt-2 text-small text-bone-muted">{{ t('themes.intro.body', { count: locked.length }) }}</p>
         <ul class="mt-4 space-y-3 text-small">
           <li v-for="id in locked" :key="id">
-            <span class="block text-[0.7rem] uppercase tracking-wider text-accent">{{ t(`themes.kind.${KIND[id]}`) }}</span>
+            <span class="block text-[0.7rem] uppercase tracking-wider text-accent">{{ t(`themes.kind.${THEME_KIND[id]}`) }}</span>
             <span>{{ t(`themes.hints.${id}`) }}</span>
           </li>
         </ul>
